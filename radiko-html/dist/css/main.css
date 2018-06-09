@@ -1,0 +1,33 @@
+body {
+  color: ;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+/* GRILLA DOBLE (EJ: HOME) */
+.grid-double {
+  padding: 40px 0;
+}
+.grid-double .grid {
+  display: flex;
+  margin: 0 -20px;
+}
+.grid-double .single-item {
+  margin: 20px;
+  width: 50%;
+}
+/*  Cómo hacemos mobile first: empezamos por los archivos de mobile, sin media queries.
+	En los archivos de mobile se hacen @import a los archivos de tablet y desktop
+	Media querie en tablet @media min-width 768
+	Media querie en desktop @media min-width 992	
+*/
+footer {
+  background: grey;
+  padding: 20px 0;
+}
+.search {
+  background: grey;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
