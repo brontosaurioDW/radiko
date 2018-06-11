@@ -112,8 +112,10 @@ h3 {
 }
 /* Lista de redes sociales */
 .social ul {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 .social li {
   margin: 0 7px;
@@ -133,6 +135,7 @@ h3 {
   padding: 40px 0;
 }
 .grid-masonry .grid {
+  display: -ms-flexbox;
   display: flex;
   margin: 0 -10px;
 }
@@ -346,6 +349,7 @@ footer .download-btn img {
     margin: 25px 0 0 0;
   }
   footer .download-btn ul {
+    display: -ms-flexbox;
     display: flex;
     margin: 25px -2% 0;
   }
@@ -354,14 +358,17 @@ footer .download-btn img {
     margin: 0 2%;
   }
   footer .social ul {
-    justify-content: flex-start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
     margin-left: -10px;
   }
 }
 .auth {
   min-height: 100vh;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 .auth h1 {
   font-weight: bold;
@@ -423,7 +430,6 @@ footer .download-btn img {
     height: 102vh;
     background: #333333;
     z-index: -1;
-    -webkit-backface-visibility: hidden;
     backface-visibility: initial;
   }
   .auth .info-left {
@@ -437,8 +443,6 @@ footer .download-btn img {
     display: block;
     width: 115px;
     background: #333333;
-    -webkit-transform: skew(7deg);
-    -ms-transform: skew(7deg);
     transform: skew(7deg);
   }
   .auth .info-right {
@@ -452,8 +456,6 @@ footer .download-btn img {
     display: block;
     width: 115px;
     background: #333333;
-    -webkit-transform: skew(-7deg);
-    -ms-transform: skew(-7deg);
     transform: skew(-7deg);
   }
   .auth .form {
@@ -461,7 +463,8 @@ footer .download-btn img {
   }
   .auth .flex {
     height: 100vh;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
 }
 /* @import url('desktop/account.less'); */
@@ -516,8 +519,10 @@ footer .download-btn img {
   background: #333;
   color: #ffffff;
   min-height: 100vh;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   text-align: center;
 }
 .search h2 {
