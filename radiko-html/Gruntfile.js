@@ -26,7 +26,7 @@ module.exports = function(grunt) {
                 separator: ';',
             },
             main: {
-                src: ['dev/js/custom/*.js'],
+                src: ['dev/js/*.js'],
                 dest: 'dist/js/main.js',
             },
             vendorJS: {
@@ -93,6 +93,16 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        copy: {
+            fonts: {
+                files: [{
+                    expand: true, 
+                    cwd: 'dev/fonts/', 
+                    src: ['**'], 
+                    dest: 'dist/fonts/'
+                }],
+            },
+        },
         watch: {
             grunt: {
                 files: ['Gruntfile.js'],
@@ -103,7 +113,7 @@ module.exports = function(grunt) {
                 tasks: ['less']
             },
             js: {
-                files: ['dev/js/***/**', 'dev/js/*'],
+                files: ['dev/js/**/*', 'dev/js/*'],
                 tasks: ['concat']
             },
             concatCSS: {
@@ -112,7 +122,11 @@ module.exports = function(grunt) {
             },
             images: {
                 files: ['dev/images/**/**', 'dev/images/*'],
-                tasks: ['images']
+                tasks: ['imagemin']
+            },
+            fonts: {
+                files: ['dev/fonts/**'],
+                tasks: ['copy:fonts']
             },
         },
     });
@@ -123,6 +137,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-concat-css');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask('default', ['less', 'autoprefixer', 'concat', 'concat_css', 'imagemin']);
+    grunt.registerTask('default', ['less', 'autoprefixer', 'concat', 'concat_css', 'imagemin', 'copy']);
 };

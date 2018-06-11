@@ -1,5 +1,164 @@
 body {
-	color: ;
+	background: #ffffff;
+	color: #333333;
 	font-size: 15px;
 	font-family: 'Poppins', sans-serif;
+}
+
+main {
+	padding-bottom: 5vh;
+}
+
+a,
+button,
+input[type=submit] {
+	transition: .3s;
+}
+
+/* Titulos */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	line-height: normal;
+}
+
+h2 {
+	font-size: 1.7em;
+}
+
+h3 {
+	font-size: 1.4em;
+}
+
+
+/* Clases generales */
+
+.bold {
+	font-weight: 700;
+}
+
+.semi-bold {
+	font-weight: 500;
+}
+
+.light {
+	font-weight: 300;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+/* Botones */
+
+.btn {
+	display: inline-block;
+	background: transparent;
+	border: 0;
+	border-radius: 10px;
+	text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 25px;
+    height: 50px;
+    line-height: 55px;
+}
+
+.btn-primary {
+	color: #DD624E;
+	background: #ffffff;
+	border: 2px solid #DD624E;
+	box-shadow: 0px 3px 0 #c74833;
+
+	&:hover {
+	    background-color: #50d2a4;
+	    border-color: #50d2a4;
+	    box-shadow: 0px 3px 0 #3cb78b;
+	}
+
+	&:not(:disabled):not(.disabled):active, 
+	&:not(:disabled):not(.disabled).active, .show > 
+	&.dropdown-toggle {
+	    background-color: #50d2a4;
+	    border-color: #50d2a4;
+	}
+
+	&:focus, 
+	&.focus {
+	    box-shadow: 0 0 0 0.1rem rgb(225, 165, 189);
+	}
+}
+
+.btn-secondary {
+	color: #ffffff;
+	background: #DD624E;
+	box-shadow: 0px 3px 0 #C94B36;
+
+	&:hover {
+	    background: #DD624E;
+	    border-color: transparent;
+	    box-shadow: 0px 3px 0 #C94B36;
+	    opacity: .9;
+	}
+
+	&:not(:disabled):not(.disabled):active, 
+	&:not(:disabled):not(.disabled).active, .show > 
+	&.dropdown-toggle {
+	    background-color: #DD624E;
+	    border-color: transparent;
+	}
+
+	&:focus, 
+	&.focus {
+	    box-shadow: 0px 3px 0 #C94B36;
+	}
+}
+
+.btn-load {
+	margin-top: 25px;
+}
+
+
+/* Estrellas -> ratings */
+
+.stars {
+	color: #ffffff;
+	font-size: 14px;
+}
+
+/* Lista de redes sociales */
+
+.social {
+	ul {
+		display: flex;
+		justify-content: center;
+	}
+
+	li {
+		margin: 0 7px;
+		
+		a {
+			display: block;
+			width: 30px;
+			height: 30px;
+			background: white;
+			text-align: center;
+			color: #c94b36;
+			border-radius: 50%;
+			line-height: 30px;
+		}
+	}
 }

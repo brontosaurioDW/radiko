@@ -1,0 +1,57 @@
+.form {
+	input[type="text"],
+	input[type="email"],
+	input[type="password"] {
+		border: 0;
+	    border-bottom: 1px solid #333;
+	    width: 100%;
+	    outline: none;
+	    font-size: 17px;
+	    padding-bottom: 10px;
+	}
+
+	.row-form {
+		overflow: auto;
+		margin-bottom: 30px;
+	}
+
+	.btn + a {
+		display: inline-block;
+		margin-top: 15px;
+	}
+}
+
+.checkbox {
+	input {
+		display: none;
+	}
+
+	input + span {
+		line-height: normal;
+		cursor: pointer;
+	}
+
+	input + span:before {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 15px;
+		border: 1px solid #333;
+		width: 20px;
+		height: 20px;
+	}
+
+	input:checked + span:before {
+		content: "\f00c";
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 900;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-size: 13px;
+		text-align: center;
+		line-height: 18px;
+		color: #ffffff;
+		border: 1px solid #50D2A4;
+		background: #50D2A4;
+	}
+}

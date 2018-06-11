@@ -4,6 +4,8 @@
 	<title>Radiko - Login</title>
 	<meta charset="utf-8">
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="dist/css/vendor.css">
@@ -12,29 +14,31 @@
 <body>
 	<div class="auth">
 		<div class="container-fluid">
-			<div class="flex">
+			<div class="d-flex flex info-left">
 				<div class="info">
 					<!-- aca la imagen copada en diagonal -->
 				</div>
 
 				<div class="form">
 					<h1>Login</h1>
-					<div class="form-row">	
+					<div class="row-form">	
 						<label class="sr-only">Usuario o email</label>
 						<input type="text" name="user" placeholder="Usuario o email">
 					</div>
-					<div class="form-row">	
+					<div class="row-form">	
 						<label class="sr-only">Contraseña</label>
 						<input type="password" name="password" placeholder="Contraseña">
 					</div>
-					<div class="form-row">	
+					<div class="row-form">	
 						<div class="remember checkbox">		
-							<input type="checkbox" name="remember">
-							<span>Recordarme</span>
+							<label>
+								<input type="checkbox" name="remember">
+								<span>Recordarme</span>
+							</label>
 						</div>
 					</div>
-					<div class="form-row text-right">	
-						<input type="submit" value="Ingresar">
+					<div class="row-form">	
+						<input type="submit" value="Ingresar" class="btn btn-secondary">
 						<a href="#">¿No tenés cuenta? <span class="bold uppercase">Regístrate</span></a>					
 					</div>
 				</div>

@@ -3,6 +3,8 @@
 <head>
 	<title>Radiko</title>
 	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
@@ -10,10 +12,10 @@
 	<link rel="stylesheet" type="text/css" href="dist/css/main.css">
 </head>
 <body>
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<header class="is-home">
+		<nav class="navbar navbar-expand-lg navbar-dark">
 			<div class="container">
-				<a class="navbar-brand" href="#">Rádiko</a>
+				<h1><a class="navbar-brand" href="index.html">Rádiko</a></h1>
 				
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#radiko-navbar" aria-controls="radiko-navbar" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -42,96 +44,131 @@
 		<section class="hero search">
 			<div class="container">
 				<div class="form">
-					<h1>Lorem Ipsum bla bla</h1>
+					<h2>
+						<span class="sr-only">Bienvenidos a Rádiko</span>
+					</h2>
+
+					<p>
+						Tu nuevo super
+					</p>
+
 					<form>
-						<div class="row-search form-row justify-content-center">
-							<input type="text" name="search" placeholder="¿Qué producto estás buscando?">
-							<input type="submit" value="Buscar" class="btn btn-search">
+						<div class="row-search form-row justify-content-center relative">
+							<input type="text" name="search" placeholder="¿Qué estás buscando?">
+							<button class="btn-search">
+								<span class="sr-only">Search</span>
+								<i class="fas fa-search"></i>
+							</button>
 						</div>
 					</form>
 				</div>	
 			</div>
 		</section>
 
-		<section class="grid-double">
+		<section class="grid-masonry">
 			<div class="container">
 				<div class="title">
 					<h2>Huertas destacadas</h2>
 				</div>				
-				<div class="grid">
-					<div class="single-item card">
-						<div class="card-body">
-							<span class="badge">Nueva!</span>
-							<div class="media">
-								<img class="mr-3 item-img"  src="https://picsum.photos/150/150/" alt="Nombre Huerta">
-								<div class="media-body item-info">
-									<h3>Huerta X</h3>
-									<div class="stars">XXXXX</div>
-									<div class="item-foo">
-										<ul class="payment">
-											<li>
-												<i class="fa fa-tarjeta"></i>
-											</li>
-											<li>
-												<i class="fa fa-tarjeta"></i>
-											</li>
-											<li>
-												<i class="fa fa-tarjeta"></i>
-											</li>
-											<li>
-												<i class="fa fa-tarjeta"></i>
-											</li>
-											<li>
-												<i class="fa fa-tarjeta"></i>
-											</li>
-										</ul>
-										<div class="shipment">
-											<i class="fa fa-camion"></i>
-											<span> Gratis</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>	
+				<div class="grid flex-wrap">
+					<div class="single-item half title-top-left plus-bottom-right red">
+						<img src="https://avatars.mds.yandex.net/get-pdb/38069/bc2e13c2-ac48-434c-acc6-9bb43867ebc2/s800" alt="Huerta 1">
 
-					<div class="single-item card">
-						<div class="card-body">
-							<div class="media">
-								<img class="mr-3 item-img"  src="https://picsum.photos/150/150/" alt="Nombre Huerta">
-								<div class="media-body item-info">
-									<h3>Huerta X</h3>
-									<div class="stars">XXXXX</div>
-									<div class="item-foo">
-										<ul class="payment">
-											<li>
-												<i class="fa fa-tarjeta"></i>
-											</li>
-											<li>
-												<i class="fa fa-tarjeta"></i>
-											</li>
-											<li>
-												<i class="fa fa-tarjeta"></i>
-											</li>
-											<li>
-												<i class="fa fa-tarjeta"></i>
-											</li>
-											<li>
-												<i class="fa fa-tarjeta"></i>
-											</li>
-										</ul>
-										<div class="shipment">
-											<i class="fa fa-camion"></i>
-											<span> Gratis</span>
-										</div>
-									</div>
-								</div>
+						<div class="item-info">
+							<h3>Tallo Verde</h3>
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
 							</div>
 						</div>
-					</div>	
+
+						<a href="#" class="cta-link">
+							<i class="fas fa-plus"></i>
+						</a>
+					</div>
+
+					<div class="single-item half title-bottom-right plus-top-left orange">
+						<img src="https://wallpapersite.com/images/wallpapers/orange-fruits-2560x1700-orange-slices-hd-3835.jpg" alt="Huerta 1">
+
+						<div class="item-info">
+							<h3>El jardín orgánico</h3>
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+
+						<a href="#" class="cta-link">
+							<i class="fas fa-plus"></i>
+						</a>
+					</div>
+
+					<div class="single-item third title-top-left plus-bottom-right violet">
+						<img src="https://images.alphacoders.com/657/657947.jpg" alt="Huerta 1">
+
+						<div class="item-info">
+							<h3>La orgánica</h3>
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+
+						<a href="#" class="cta-link">
+							<i class="fas fa-plus"></i>
+						</a>
+					</div>
+
+					<div class="single-item third title-center-bottom plus-top-right green">
+						<img src="https://images.food52.com/ayNf5psIRMf9Y3Du-I2ir3Hr1r4=/fit-in/1200x1200/70b5b54b-32d9-40be-9bc5-8b43eb9020f1--2016-0525_avocados_james-ransom-107.jpg" alt="Huerta 1">
+
+						<div class="item-info">
+							<h3>El brote urbano</h3>
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+
+						<a href="#" class="cta-link">
+							<i class="fas fa-plus"></i>
+						</a>
+					</div>
+
+					<div class="single-item third title-bottom-right plus-top-left red">
+						<img src="http://hdlatestwallpaper.com/?edmc=3331" alt="Huerta 1">
+
+						<div class="item-info">
+							<h3>Ital</h3>
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+
+						<a href="#" class="cta-link">
+							<i class="fas fa-plus"></i>
+						</a>
+					</div>
+
 				</div>
-				<div class="text-center">
-					<button class="btn btn-medium btn-color">Ver todas</button>
+				<div class="text-center btn-load">
+					<button class="btn btn-medium btn-primary">Ver todas</button>
 				</div>
 			</div>
 		</section>
@@ -139,53 +176,48 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col col-md-3">
+				<div class="col-md-3">
 					<a href="#" class="logo-foo"> Rádiko </a>
 
-					<p>
-						askdjaskd askld jaskld asjdklsa djlkas jdkalsdj askldj asdkljas dlkjasd ajslkdjas dklajs dklasjdkl asjdklasjd kalsjd askldj askldjaskldj aklsdj
-					</p>
+					<p> Tu nuevo super </p>
 				</div>	
-				<div class="col col-md-3">
-					<h2>Title</h2>
+				<div class="col-md-3">
 					<ul>
 						<li>
-							<a href="#">Item 1</a>
+							<a href="#">Preguntas frecuentes</a>
 						</li>
+						<li>
+							<a href="#">Legales</a>
+						</li>
+						<li>
+							<a href="#">Términos y condiciones</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul>
 						<li>
 							<a href="#">Item 2</a>
 						</li>
 						<li>
 							<a href="#">Item 3</a>
 						</li>
-					</ul>
-				</div>
-				<div class="col col-md-3">
-					<h2>Title</h2>
-					<ul>
 						<li>
-							<a href="#">Item 1</a>
-						</li>
-						<li>
-							<a href="#">Item 2</a>
-						</li>
-						<li>
-							<a href="#">Item 3</a>
+							<a href="#">Soy una huerta</a>
 						</li>
 					</ul>
 				</div>
-				<div class="col col-md-3">
-					<h2>Title</h2>
+				<div class="col-md-3">
 					<div class="download-btn">
 						<ul>
 							<li>
 								<a href="#">
-									<img src="path/to/logo.png" alt="Download in Google Play">
+									<img src="dist/images/google-play-btn.png" alt="Download in Google Play" class="img-fluid">
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<img src="path/to/logo.png" alt="Download in App Store">
+									<img src="dist/images/app-store-btn.png" alt="Download in App Store" class="img-fluid">
 								</a>
 							</li>
 						</ul>
@@ -195,12 +227,12 @@
 						<ul>
 							<li>
 								<a href="#">
-									<img src="path/to/logo.png" alt="Instagram">
+									<i class="fab fa-instagram"></i>
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<img src="path/to/logo.png" alt="Facebook">
+									<i class="fab fa-facebook-f"></i>
 								</a>
 							</li>
 						</ul>
