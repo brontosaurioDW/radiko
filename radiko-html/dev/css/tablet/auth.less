@@ -7,6 +7,7 @@
 			right: 0;
 			bottom: 0;
 			left: 0;
+			top: unset;
 			background: #333;
 			min-height: 35vh;
 		}
@@ -42,6 +43,18 @@
 		    clear: both;
 		}
 	}
+
+	.btn.back-button-login {
+		float: left!important;
+		margin-top: 1rem;
+		margin-left: 1rem;
+	}
+
+	.btn.back-button-registro {
+		float: right !important;
+		margin-top: 1rem;
+		margin-right: 1rem;
+	}
 }
 
 
@@ -59,9 +72,16 @@
 		.form {
 			width: 42vw;
 			height: 100vh;
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-ms-grid-row-align: center;
 			align-items: center;
-			justify-content: center;
+			-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 			max-width: unset;
 			margin: 0;
 			z-index: 2;
@@ -74,7 +94,7 @@
 				z-index: -1;
 				overflow: visible;
 				width: 100%;
-				height: 102vh;
+				height: 100vh;
 				display: block;
 				width: 12vw;
 				background: #ffffff;
@@ -129,7 +149,10 @@
 
 		.flex {
 			height: 100vh;
-			align-items: center;
+			-webkit-box-align: center;
+-ms-flex-align: center;
+-ms-grid-row-align: center;
+align-items: center;
 		}
 	}
 }

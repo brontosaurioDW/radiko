@@ -1,7 +1,12 @@
 .auth {
 	min-height: 100vh;	
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+-ms-flex-align: center;
+-ms-grid-row-align: center;
+align-items: center;
 
 	h1 {
 		font-weight: bold;
@@ -10,6 +15,12 @@
 
 	.form {
 		width: 100%;
+		max-width: 520px;
+		margin: 65px auto 30px;
+		position: relative;
+		z-index: 2;
+		background: white;
+		padding: 15px;
 	}
 
 	.btn {
@@ -19,20 +30,34 @@
 	.btn + a {
 		color: #333;
 	}
-}
 
-.btn.back-button-login {
-	float: left !important;
-	margin-top: 2rem;
-	margin-left: 2rem;
-	line-height: 3rem;
-}
+	.info {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		top: 0;
+		z-index: 1;
+	}
 
-.btn.back-button-registro {
-	float: right !important;
-	margin-top: 2rem;
-	margin-right: 2rem;
-	line-height: 3rem;
+	.info-right {
+		.info {
+			background: url('../images/bg-2.jpg') no-repeat center center white;
+			background-size: cover;
+		}
+	}
+
+	.info-left {
+		.info {
+			background: url('../images/bg-1.jpg') no-repeat center center white;
+			background-size: cover;
+		}
+	}
+
+	.btn-link {
+		display: inline-block;
+		margin-top: 15px;
+	}
 }
 
 @import url('tablet/auth.less');
