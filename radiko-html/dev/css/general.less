@@ -129,11 +129,10 @@ h3 {
 	box-shadow: 0px 3px 0 #c74833;
 
 	&:hover {
-		color: #DD624E;
-		background: #ffffff;
+		color: #ffffff;
+		background: #DD624E;
 		border: 2px solid #DD624E;
 		box-shadow: 0px 3px 0 #c74833;
-		opacity: 0.8;
 	}
 
 	&:not(:disabled):not(.disabled):active, 
@@ -256,6 +255,7 @@ h3 {
 
 .huerta-title-wrapper {
 	background: url(../images/bk-huerta.jpg) no-repeat bottom center #50d2a4;
+	background-size: cover;
     height: 340px;
     position: relative;
 
@@ -397,6 +397,16 @@ h3 {
 		padding: .5rem 1rem;
 		display: inline-block;
 		margin-bottom: 5px;
+
+		a {
+			color: #fff;
+			font-size: 1rem;
+			font-weight: 700;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 
 	.producto-precio {
@@ -457,11 +467,27 @@ h3 {
 		font-weight: 700;
 		display: inline-block;
 		padding: .5rem 1rem;
-		margin-bottom: 1rem;
+		margin-bottom: 0;
+
+		&.huerta {
+			margin-top: 5px;
+			background-color: #DD964E;
+
+			a {
+				color: #fff;
+				text-decoration: none;
+
+				&:hover {
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+		}
 	}
 
 	.producto-precio {
-		font-weight: 700
+		margin-top: 1rem;		
+		font-weight: 700;
 	}
 }
 
