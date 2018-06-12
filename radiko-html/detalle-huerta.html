@@ -52,7 +52,27 @@
 		<section class="huerta-title-wrapper">
 			<div class="container-fluid">
 				<div class="row">
-					<h2 class="huerta-title	">Huerta X</h2>
+					<h2 class="huerta-title	">Tallo Verde</h2>
+				</div>
+			</div>
+		</section>
+
+		<section class="huerta-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="home-tab" data-toggle="tab" href="#huerta-productos-listado" role="tab" aria-controls="home" aria-selected="true">Productos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="profile-tab" data-toggle="tab" href="#huerta-informacion" role="tab" aria-controls="profile" aria-selected="false">Información</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="contact-tab" data-toggle="tab" href="#huerta-rating" role="tab" aria-controls="contact" aria-selected="false">Rating</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -60,25 +80,147 @@
 		<section class="huerta-options">
 			<div class="container">
 
-				<div class="row">
-					<div class="col">
-						<form>
-							<div class="row-search form-row justify-content-right relative huerta-buscar">
-								<input type="text" name="search" placeholder="¿Qué estás buscando?">
-								<button class="btn-search">
-									<span class="sr-only">Search</span>
-									<i class="fas fa-search"></i>
-								</button>
-							</div>
-						</form>						
-					</div>
-				</div>
 				
 
-				<div class="tab-content my-3" id="nav-tabContent">
-					<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				<div class="tab-content my-3" id="huerta-productos">
+					<div class="tab-pane fade show active" id="huerta-productos-listado" role="tabpanel" aria-labelledby="huerta-productos-listado">
 
 						<div class="row">
+							<div class="col">
+								<form class="huerta-form-buscar">
+									<div class="row-search form-row justify-content-right relative huerta-buscar">
+										<input type="text" name="search" placeholder="¿Qué estás buscando?">
+										<button class="btn-search">
+											<span class="sr-only">Search</span>
+											<i class="fas fa-search"></i>
+										</button>
+									</div>
+								</form>						
+							</div>
+						</div>
+
+						<div class="row listado-productos">
+
+							<div class="col-12 col-md-9">
+								<div class="huerta-productos">							
+
+									<div class="row">
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a data-toggle="modal" data-target="#producto-detalle">												
+													<img class="card-img-top" src="dist/images/p-1.jpg" alt="Card image cap">							
+												</a>
+												<div class="card-body">
+													<h4 class="card-title">Tomate</h4>
+													<p><span class="producto-precio">$40</span> x kg.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a data-toggle="modal" data-target="#producto-detalle">												
+													<img class="card-img-top" src="dist/images/p-2.jpg" alt="Card image cap">							
+												</a>
+												<div class="card-body">
+													<h4 class="card-title">Lechuga</h4>
+													<p><span class="producto-precio">$40</span> x kg.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a data-toggle="modal" data-target="#producto-detalle">												
+													<img class="card-img-top" src="dist/images/p-3.jpg" alt="Card image cap">							
+												</a>
+												<div class="card-body">
+													<h4 class="card-title">Morrón amarillo</h4>
+													<p><span class="producto-precio">$40</span> x kg.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a data-toggle="modal" data-target="#producto-detalle">												
+													<img class="card-img-top" src="dist/images/p-4.jpg" alt="Card image cap">							
+												</a>
+												<div class="card-body">
+													<h4 class="card-title">Zanahoria</h4>
+													<p><span class="producto-precio">$40</span> x kg.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a data-toggle="modal" data-target="#producto-detalle">												
+													<img class="card-img-top" src="dist/images/p-5.jpg" alt="Card image cap">							
+												</a>
+												<div class="card-body">
+													<h4 class="card-title">Naranja</h4>
+													<p><span class="producto-precio">$40</span> x kg.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a data-toggle="modal" data-target="#producto-detalle">												
+													<img class="card-img-top" src="dist/images/p-6.jpg" alt="Card image cap">							
+												</a>
+												<div class="card-body">
+													<h4 class="card-title">Frutilla</h4>
+													<p><span class="producto-precio">$40</span> x kg.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a data-toggle="modal" data-target="#producto-detalle">												
+													<img class="card-img-top" src="dist/images/p-7.jpg" alt="Card image cap">							
+												</a>
+												<div class="card-body">
+													<h4 class="card-title">Palta</h4>
+													<p><span class="producto-precio">$40</span> x kg.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a data-toggle="modal" data-target="#producto-detalle">												
+													<img class="card-img-top" src="dist/images/p-8.jpg" alt="Card image cap">							
+												</a>
+												<div class="card-body">
+													<h4 class="card-title">Pepino</h4>
+													<p><span class="producto-precio">$40</span> x kg.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a data-toggle="modal" data-target="#producto-detalle">												
+													<img class="card-img-top" src="dist/images/p-9.jpg" alt="Card image cap">							
+												</a>
+												<div class="card-body">
+													<h4 class="card-title">Ajo</h4>
+													<p><span class="producto-precio">$40</span> x kg.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-12">										
+										<nav aria-label="navigation" class="huerta-navigation">
+											<ul class="pagination justify-content-center">												
+												<li class="page-item"><a class="page-link" href="#">1</a></li>
+												<li class="page-item"><a class="page-link" href="#">2</a></li>
+												<li class="page-item"><a class="page-link" href="#">3</a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+
+							</div>
+
 							<div class="col-12 col-md-3">
 								<div class="huerta-list">									
 									<ul class="list-group list-group-flush">
@@ -111,26 +253,26 @@
 									<ul class="list-group list-group-flush">
 										<li class="list-group-item list-title">Categoría</li>
 										<li class="list-group-item">
-											<label for="valor-1">
+											<label for="valor-4">
 												<div class="checkbox">		
-													<input type="checkbox" name="valor-1" id="valor-1">
-													<span>Valor 1</span>
+													<input type="checkbox" name="valor-4" id="valor-4">
+													<span>Valor 4</span>
 												</div>
 											</label>
 										</li>
 										<li class="list-group-item">
-											<label for="valor-2">
+											<label for="valor-5">
 												<div class="checkbox">		
-													<input type="checkbox" name="valor-2" id="valor-2">
-													<span>Valor 2</span>
+													<input type="checkbox" name="valor-5" id="valor-5">
+													<span>Valor 5</span>
 												</div>
 											</label>
 										</li>
 										<li class="list-group-item">
-											<label for="valor-3">
+											<label for="valor-6">
 												<div class="checkbox">		
-													<input type="checkbox" name="valor-3" id="valor-3">
-													<span>Valor 3</span>
+													<input type="checkbox" name="valor-6" id="valor-6">
+													<span>Valor 6</span>
 												</div>
 											</label>
 										</li>
@@ -138,26 +280,26 @@
 									<ul class="list-group list-group-flush">
 										<li class="list-group-item list-title">Categoría</li>
 										<li class="list-group-item">
-											<label for="valor-1">
+											<label for="valor-7">
 												<div class="checkbox">		
-													<input type="checkbox" name="valor-1" id="valor-1">
-													<span>Valor 1</span>
+													<input type="checkbox" name="valor-7" id="valor-7">
+													<span>Valor 7</span>
 												</div>
 											</label>
 										</li>
 										<li class="list-group-item">
-											<label for="valor-2">
+											<label for="valor-8">
 												<div class="checkbox">		
-													<input type="checkbox" name="valor-2" id="valor-2">
-													<span>Valor 2</span>
+													<input type="checkbox" name="valor-8" id="valor-8">
+													<span>Valor 8</span>
 												</div>
 											</label>
 										</li>
 										<li class="list-group-item">
-											<label for="valor-3">
+											<label for="valor-9">
 												<div class="checkbox">		
-													<input type="checkbox" name="valor-3" id="valor-3">
-													<span>Valor 3</span>
+													<input type="checkbox" name="valor-9" id="valor-9">
+													<span>Valor 9</span>
 												</div>
 											</label>
 										</li>
@@ -166,94 +308,14 @@
 								</div>
 							</div>
 
-							<div class="col-12 col-md-9">
-								<div class="huerta-productos">							
 
-									<div class="row">
-										<div class="col-12 col-sm-6 col-md-4">
-											<div class="card">
-												<a href="#">												
-													<img class="card-img-top" src="dist/images/p-1.jpg" alt="Card image cap">							
-												</a>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-md-4">
-											<div class="card">
-												<a href="#">												
-													<img class="card-img-top" src="dist/images/p-2.jpg" alt="Card image cap">							
-												</a>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-md-4">
-											<div class="card">
-												<a href="#">												
-													<img class="card-img-top" src="dist/images/p-3.jpg" alt="Card image cap">							
-												</a>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-md-4">
-											<div class="card">
-												<a href="#">												
-													<img class="card-img-top" src="dist/images/p-4.jpg" alt="Card image cap">							
-												</a>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-md-4">
-											<div class="card">
-												<a href="#">												
-													<img class="card-img-top" src="dist/images/p-5.jpg" alt="Card image cap">							
-												</a>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-md-4">
-											<div class="card">
-												<a href="#">												
-													<img class="card-img-top" src="dist/images/p-6.jpg" alt="Card image cap">							
-												</a>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-md-4">
-											<div class="card">
-												<a href="#">												
-													<img class="card-img-top" src="dist/images/p-7.jpg" alt="Card image cap">							
-												</a>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-md-4">
-											<div class="card">
-												<a href="#">												
-													<img class="card-img-top" src="dist/images/p-8.jpg" alt="Card image cap">							
-												</a>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-md-4">
-											<div class="card">
-												<a href="#">												
-													<img class="card-img-top" src="dist/images/p-9.jpg" alt="Card image cap">							
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
 
-								<div class="row">
-									<div class="col-12">										
-										<nav aria-label="Page navigation example">
-											<ul class="pagination justify-content-center">												
-												<li class="page-item"><a class="page-link" href="#">1</a></li>
-												<li class="page-item"><a class="page-link" href="#">2</a></li>
-												<li class="page-item"><a class="page-link" href="#">3</a></li>
-											</ul>
-										</nav>
-									</div>
-								</div>
-
-							</div>
 						</div>
 
 
 					</div>
-					<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"> 
+
+					<div class="tab-pane fade" id="huerta-informacion" role="tabpanel" aria-labelledby="huerta-informacion"> 
 
 						<div class="row">
 
@@ -300,7 +362,7 @@
 
 					</div>
 
-					<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+					<div class="tab-pane fade" id="huerta-rating" role="tabpanel" aria-labelledby="huerta-rating">
 
 						<div class="media mb-4">
 							<img class="mr-3" src="http://placeholder.pics/svg/64" alt="Generic placeholder image">
@@ -338,39 +400,57 @@
 		</section>
 
 		<!-- Modal -->
-		<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		<div class="modal fade" id="producto-detalle" tabindex="-1" role="dialog" aria-labelledby="producto-title" aria-hidden="true">
 			<div class="modal-dialog modal-lg" role="document">
 				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLongTitle">Detalle de producto</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
+
+					<div class="modal-body modal-producto">
 						<div class="container-fluid">							
-							<div class="row">
+							<div class="row">	
 								<div class="col col-md-6">
-									<h5>Producto X</h5>
-									<img class="img-fluid mb-3" src="http://placeholder.pics/svg/400x300" alt="Generic placeholder image">
-									<div class="card">
-										<ul class="list-group list-group-flush">
-											<li class="list-group-item">Cras justo odio</li>
-											<li class="list-group-item">Dapibus ac facilisis in</li>
-											<li class="list-group-item">Vestibulum at eros</li>
-										</ul>
-									</div>
+									<img class="img-fluid mb-3" src="dist/images/p-1.jpg" alt="tomates">									
 								</div>
 								<div class="col col-dm-6">
-									<div class="badge badge-primary mb-3">$300</div>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<h3 class="producto-title">Tomate</h3>
+									<p><span class="producto-precio">$40</span> x kg.</p>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut error officia placeat illo alias cum minima dignissimos accusantium earum incidunt.</p>
-									<div class="card">
-										<ul class="list-group list-group-flush">
-											<li class="list-group-item">Cras justo odio</li>
-											<li class="list-group-item">Dapibus ac facilisis in</li>
-											<li class="list-group-item">Vestibulum at eros</li>
-										</ul>
-									</div>
+									
+
+									<form>
+										<div class="form-group row">
+											<label for="variedad" class="col-sm-3 col-form-label">Variedad</label>
+											<div class="col-sm-9">
+												
+												<select class=" form-control custom-select mr-sm-2" id="variedad">
+													<option selected>Elegir...</option>
+													<option value="1">Variedad 1</option>
+													<option value="2">Variedad 2</option>
+													<option value="3">Variedad 3</option>
+												</select>
+
+											</div>
+										</div>
+										
+										<div class="form-group row">
+											<label for="cantidad" class="col-sm-3 col-form-label">Cantidad</label>
+											<div class="col-sm-9">
+												<input type="number" class="form-control" id="cantidad">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<div class="col-sm-10">
+												<button type="submit" class="btn btn-primary">Comprar</button>
+											</div>
+										</div>
+
+									</form>
+
+
+
 								</div>
 							</div>
 						</div>
