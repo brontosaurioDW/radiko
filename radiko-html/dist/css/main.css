@@ -439,6 +439,14 @@ footer .download-btn img {
     background: #333;
     min-height: 35vh;
   }
+  .auth .info-right .info {
+    background: url('../images/bg-2.jpg') no-repeat center center white;
+    background-size: cover;
+  }
+  .auth .info-left .info {
+    background: url('../images/bg-1.jpg') no-repeat center center white;
+    background-size: cover;
+  }
   .auth .form {
     width: 60%;
     max-width: 520px;
@@ -461,10 +469,20 @@ footer .download-btn img {
   }
   .auth .info {
     position: relative;
-    width: 45vw;
+    width: 58vw;
     height: 100vh;
   }
-  .auth .info:before {
+  .auth .form {
+    width: 42vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: unset;
+    margin: 0;
+    z-index: 2;
+  }
+  .auth .form:before {
     content: '';
     position: absolute;
     top: 0;
@@ -472,43 +490,45 @@ footer .download-btn img {
     overflow: visible;
     width: 100%;
     height: 102vh;
-    background: #333333;
+    display: block;
+    width: 12vw;
+    background: #ffffff;
     z-index: -1;
     -webkit-backface-visibility: hidden;
     backface-visibility: initial;
   }
+  .auth .form > div {
+    width: 75%;
+  }
   .auth .info-left {
     margin-left: -15px;
   }
-  .auth .info-left .info {
-    margin-right: 10vw;
+  .auth .info-left .form {
+    margin-right: -15px;
   }
-  .auth .info-left .info:before {
-    right: -65px;
-    display: block;
-    width: 115px;
-    background: #333333;
-    -webkit-transform: skew(7deg);
-    -ms-transform: skew(7deg);
-    transform: skew(7deg);
+  .auth .info-left .form:before {
+    right: 35vw;
+    -webkit-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    transform: skew(6deg);
+  }
+  .auth .info-left .form > div {
+    padding-right: 10%;
   }
   .auth .info-right {
     margin-right: -15px;
   }
-  .auth .info-right .info {
-    margin-left: 10vw;
+  .auth .info-right .form {
+    margin-left: -15px;
   }
-  .auth .info-right .info:before {
-    left: -65px;
-    display: block;
-    width: 115px;
-    background: #333333;
-    -webkit-transform: skew(-7deg);
-    -ms-transform: skew(-7deg);
-    transform: skew(-7deg);
+  .auth .info-right .form:before {
+    left: 35vw;
+    -webkit-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    transform: skew(-6deg);
   }
-  .auth .form {
-    width: 50vw;
+  .auth .info-right .form > div {
+    padding-left: 10%;
   }
   .auth .flex {
     height: 100vh;

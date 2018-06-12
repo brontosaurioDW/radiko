@@ -11,6 +11,20 @@
 			min-height: 35vh;
 		}
 
+		.info-right {
+			.info {
+				background: url('../images/bg-2.jpg') no-repeat center center white;
+				background-size: cover;
+			}
+		}
+
+		.info-left {
+			.info {
+				background: url('../images/bg-1.jpg') no-repeat center center white;
+				background-size: cover;
+			}
+		}
+
 		.form {
 			width: 60%;
 			max-width: 520px;
@@ -38,8 +52,19 @@
 
 		.info {
 			position: relative;
-			width: 45vw;
+			width: 58vw;
 			height: 100vh;
+		}		
+
+		.form {
+			width: 42vw;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: unset;
+			margin: 0;
+			z-index: 2;
 
 			&:before {
 				content: '';
@@ -50,27 +75,35 @@
 				overflow: visible;
 				width: 100%;
 				height: 102vh;
-				background: #333333;
+				display: block;
+				width: 12vw;
+				background: #ffffff;
 				z-index: -1;
 				-webkit-backface-visibility: hidden;
 				backface-visibility: initial;
 			}
+
+			& > div {
+				width: 75%;
+			}
 		}
+
 
 		.info-left {
 			margin-left: -15px;
 
-			.info {				
-				margin-right: 10vw;
+			.form {
+				margin-right: -15px;
 
 				&:before {
-					right: -65px;
-					display: block;
-					width: 115px;
-					background: #333333;
-					-webkit-transform: skew(7deg);
-					-ms-transform: skew(7deg);
-					transform: skew(7deg);
+					right: 35vw;
+				    -webkit-transform: rotate(6deg);
+				    -ms-transform: rotate(6deg);
+				    transform: skew(6deg);
+				}
+
+				& > div {
+					padding-right: 10%;
 				}
 			}
 		}
@@ -78,23 +111,20 @@
 		.info-right {
 			margin-right: -15px;
 
-			.info {				
-				margin-left: 10vw;
-	
+			.form {
+				margin-left: -15px;
+
 				&:before {
-					left: -65px;
-					display: block;
-					width: 115px;
-					background: #333333;
-					-webkit-transform: skew(-7deg);
-					-ms-transform: skew(-7deg);
-					transform: skew(-7deg);
+					left: 35vw;
+					-webkit-transform: rotate(-6deg);
+					-ms-transform: rotate(-6deg);
+					transform: skew(-6deg);
+				}
+
+				& > div {
+					padding-left: 10%;
 				}
 			}
-		}
-
-		.form {
-			width: 50vw;
 		}
 
 		.flex {
