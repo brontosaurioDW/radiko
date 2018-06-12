@@ -112,8 +112,10 @@ h3 {
 }
 /* Lista de redes sociales */
 .social ul {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 .social li {
   margin: 0 7px;
@@ -184,6 +186,7 @@ h3 {
   padding: 40px 0;
 }
 .grid-masonry .grid {
+  display: -ms-flexbox;
   display: flex;
   margin: 0 -10px;
 }
@@ -304,11 +307,6 @@ h3 {
     bottom: inherit;
   }
 }
-/*  Cómo hacemos mobile first: empezamos por los archivos de mobile, sin media queries.
-	En los archivos de mobile se hacen @import a los archivos de tablet y desktop
-	Media querie en tablet @media min-width 768
-	Media querie en desktop @media min-width 992	
-*/
 header {
   position: fixed;
   left: 0;
@@ -397,6 +395,7 @@ footer .download-btn img {
     margin: 25px 0 0 0;
   }
   footer .download-btn ul {
+    display: -ms-flexbox;
     display: flex;
     margin: 25px -2% 0;
   }
@@ -405,14 +404,17 @@ footer .download-btn img {
     margin: 0 2%;
   }
   footer .social ul {
-    justify-content: flex-start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
     margin-left: -10px;
   }
 }
 .auth {
   min-height: 100vh;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 .auth h1 {
   font-weight: bold;
@@ -475,9 +477,12 @@ footer .download-btn img {
   .auth .form {
     width: 42vw;
     height: 100vh;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
     max-width: unset;
     margin: 0;
     z-index: 2;
@@ -494,7 +499,6 @@ footer .download-btn img {
     width: 12vw;
     background: #ffffff;
     z-index: -1;
-    -webkit-backface-visibility: hidden;
     backface-visibility: initial;
   }
   .auth .form > div {
@@ -508,8 +512,6 @@ footer .download-btn img {
   }
   .auth .info-left .form:before {
     right: 35vw;
-    -webkit-transform: rotate(6deg);
-    -ms-transform: rotate(6deg);
     transform: skew(6deg);
   }
   .auth .info-left .form > div {
@@ -523,8 +525,6 @@ footer .download-btn img {
   }
   .auth .info-right .form:before {
     left: 35vw;
-    -webkit-transform: rotate(-6deg);
-    -ms-transform: rotate(-6deg);
     transform: skew(-6deg);
   }
   .auth .info-right .form > div {
@@ -532,7 +532,8 @@ footer .download-btn img {
   }
   .auth .flex {
     height: 100vh;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
 }
 /* @import url('desktop/account.less'); */
@@ -587,8 +588,10 @@ footer .download-btn img {
   background: #333;
   color: #ffffff;
   min-height: 100vh;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   text-align: center;
 }
 .search h2 {
@@ -634,3 +637,4 @@ footer .download-btn img {
     max-width: 500px;
   }
 }
+/*  Explorer  */

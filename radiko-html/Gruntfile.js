@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         },
         concat: {
             options: {
-                separator: ';',
+                separator: '',
             },
             main: {
                 src: ['dev/js/*.js'],
