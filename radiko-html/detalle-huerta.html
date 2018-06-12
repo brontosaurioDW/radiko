@@ -10,12 +10,15 @@
 
 	<link rel="stylesheet" type="text/css" href="dist/css/vendor.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/main.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
 </head>
 <body>
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<header class="huerta-detalle">
+		<nav class="navbar navbar-expand-lg navbar-dark">
 			<div class="container">
-				<a class="navbar-brand" href="#">Rádiko</a>
+				<h1><a class="navbar-brand" href="index.html">Rádiko</a></h1>
 				
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#radiko-navbar" aria-controls="radiko-navbar" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -24,217 +27,165 @@
 				<div class="collapse navbar-collapse justify-content-end" id="radiko-navbar">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link" href="#">Link 1</a>
+							<a class="nav-link" href="#">Huertas</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Link 1</a>
+							<a class="nav-link" href="#">Productos</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Ingresar</a>
+							<a class="nav-link" href="login.html">Ingresar</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Carrito</a>
+							<a class="nav-link" href="#" data-toggle="tooltip" data-placement="right" title="Tooltip on top">
+								<i class="fas fa-shopping-cart"></i>
+							</a>
+
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
-	<main>
 
-		<section class="huerta-title">
+	<main class="huerta-content">
+
+		<section>
 			<div class="container">
 				<div class="row">
-					<h2 class="mx-auto my-5">Huerta X</h2>
+					<h2 class="huerta-title	">Huerta X</h2>
 				</div>
 			</div>
 		</section>
 		
 		<section class="huerta-options">
 			<div class="container">
-				
 
-
-
-				<nav>
-					<div class="nav nav-tabs" id="nav-tab" role="tablist">
-						<a class="flex-sm-fill text-sm-center nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
-							<img src="http://placeholder.pics/svg/60" alt="">
-							Productos
-						</a>
-						<a class="flex-sm-fill text-sm-center nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
-							<img src="http://placeholder.pics/svg/60" alt="">
-							Información
-						</a>
-						<a class="flex-sm-fill text-sm-center nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
-							<img src="http://placeholder.pics/svg/60" alt="">
-							Calif. Comentarios
-						</a>
+				<div class="row">
+					<div class="col">
+						<form>
+							<div class="row-search form-row justify-content-right relative huerta-buscar">
+								<input type="text" name="search" placeholder="¿Qué estás buscando?">
+								<button class="btn-search">
+									<span class="sr-only">Search</span>
+									<i class="fas fa-search"></i>
+								</button>
+							</div>
+						</form>						
 					</div>
-				</nav>
-
+				</div>
+				
 
 				<div class="tab-content my-3" id="nav-tabContent">
 					<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
 						<div class="row">
-							<div class="col col-md-3">
-								<ul class="list-group">
-									<li class="list-group-item active">Cras justo odio</li>
-									<li class="list-group-item">Dapibus ac facilisis in</li>
-									<li class="list-group-item">Morbi leo risus</li>
-									<li class="list-group-item">Porta ac consectetur ac</li>
-									<li class="list-group-item">Vestibulum at eros</li>
-									<li class="list-group-item">Dapibus ac facilisis in</li>
-									<li class="list-group-item">Morbi leo risus</li>
-									<li class="list-group-item">Porta ac consectetur ac</li>
-									<li class="list-group-item">Vestibulum at eros</li>
-								</ul>
+							<div class="col-12 col-md-3">
+								<div class="huerta-list">									
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item list-title">Categoría</li>
+										<li class="list-group-item"><a href="#">Valor 1</a></li>
+										<li class="list-group-item"><a href="#">Valor 2</a></li>
+										<li class="list-group-item"><a href="#">Valor 3</a></li>
+									</ul>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item list-title">Categoría</li>
+										<li class="list-group-item"><a href="#">Valor 1</a></li>
+										<li class="list-group-item"><a href="#">Valor 2</a></li>
+										<li class="list-group-item"><a href="#">Valor 3</a></li>
+									</ul>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item list-title">Categoría</li>
+										<li class="list-group-item"><a href="#">Valor 1</a></li>
+										<li class="list-group-item"><a href="#">Valor 2</a></li>
+										<li class="list-group-item"><a href="#">Valor 3</a></li>
+									</ul>
+								</div>
 							</div>
 
-							<div class="col col-md-9">
+							<div class="col-12 col-md-9">
+								<div class="huerta-productos">							
 
-								<nav class="navbar px-0 mb-3">
-									
-									<form class="form-inline ml-auto">
-										<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-										<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-									</form>
-								</nav>
-
-
-								<div class="row">
-
-									<div class="col col-sm-6 col-md-4">
-										<div class="card mb-4">
-											<img class="card-img-top" src="http://placeholder.pics/svg/300x200" alt="Card image cap">
-											<div class="card-body">
-												<h5 class="card-title">Producto X</h5>
-												<p class="card-text">Some quick example text to build on the card title and.</p>
-												<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-													Ver más
-												</button>
+									<div class="row">
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a href="#">												
+													<img class="card-img-top" src="dist/images/p-1.jpg" alt="Card image cap">							
+												</a>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a href="#">												
+													<img class="card-img-top" src="dist/images/p-2.jpg" alt="Card image cap">							
+												</a>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a href="#">												
+													<img class="card-img-top" src="dist/images/p-3.jpg" alt="Card image cap">							
+												</a>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a href="#">												
+													<img class="card-img-top" src="dist/images/p-4.jpg" alt="Card image cap">							
+												</a>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a href="#">												
+													<img class="card-img-top" src="dist/images/p-5.jpg" alt="Card image cap">							
+												</a>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a href="#">												
+													<img class="card-img-top" src="dist/images/p-6.jpg" alt="Card image cap">							
+												</a>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a href="#">												
+													<img class="card-img-top" src="dist/images/p-7.jpg" alt="Card image cap">							
+												</a>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a href="#">												
+													<img class="card-img-top" src="dist/images/p-8.jpg" alt="Card image cap">							
+												</a>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4">
+											<div class="card">
+												<a href="#">												
+													<img class="card-img-top" src="dist/images/p-9.jpg" alt="Card image cap">							
+												</a>
 											</div>
 										</div>
 									</div>
-									<div class="col col-sm-6 col-md-4">
-										<div class="card mb-4">
-											<img class="card-img-top" src="http://placeholder.pics/svg/300x200" alt="Card image cap">
-											<div class="card-body">
-												<h5 class="card-title">Producto X</h5>
-												<p class="card-text">Some quick example text to build on the card title and.</p>
-												<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-													Ver más
-												</button>
-											</div>
-										</div>
-									</div>
-									<div class="col col-sm-6 col-md-4">
-										<div class="card mb-4">
-											<img class="card-img-top" src="http://placeholder.pics/svg/300x200" alt="Card image cap">
-											<div class="card-body">
-												<h5 class="card-title">Producto X</h5>
-												<p class="card-text">Some quick example text to build on the card title and.</p>
-												<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-													Ver más
-												</button>
-											</div>
-										</div>
-									</div>
-									<div class="col col-sm-6 col-md-4">
-										<div class="card mb-4">
-											<img class="card-img-top" src="http://placeholder.pics/svg/300x200" alt="Card image cap">
-											<div class="card-body">
-												<h5 class="card-title">Producto X</h5>
-												<p class="card-text">Some quick example text to build on the card title and.</p>
-												<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-													Ver más
-												</button>
-											</div>
-										</div>
-									</div>
-									<div class="col col-sm-6 col-md-4">
-										<div class="card mb-4">
-											<img class="card-img-top" src="http://placeholder.pics/svg/300x200" alt="Card image cap">
-											<div class="card-body">
-												<h5 class="card-title">Producto X</h5>
-												<p class="card-text">Some quick example text to build on the card title and.</p>
-												<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-													Ver más
-												</button>
-											</div>
-										</div>
-									</div>
-									<div class="col col-sm-6 col-md-4">
-										<div class="card mb-4">
-											<img class="card-img-top" src="http://placeholder.pics/svg/300x200" alt="Card image cap">
-											<div class="card-body">
-												<h5 class="card-title">Producto X</h5>
-												<p class="card-text">Some quick example text to build on the card title and.</p>
-												<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-													Ver más
-												</button>
-											</div>
-										</div>
-									</div>
-									<div class="col col-sm-6 col-md-4">
-										<div class="card mb-4">
-											<img class="card-img-top" src="http://placeholder.pics/svg/300x200" alt="Card image cap">
-											<div class="card-body">
-												<h5 class="card-title">Producto X</h5>
-												<p class="card-text">Some quick example text to build on the card title and.</p>
-												<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-													Ver más
-												</button>
-											</div>
-										</div>
-									</div>
-									<div class="col col-sm-6 col-md-4">
-										<div class="card mb-4">
-											<img class="card-img-top" src="http://placeholder.pics/svg/300x200" alt="Card image cap">
-											<div class="card-body">
-												<h5 class="card-title">Producto X</h5>
-												<p class="card-text">Some quick example text to build on the card title and.</p>
-												<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-													Ver más
-												</button>
-											</div>
-										</div>
-									</div>
-									<div class="col col-sm-6 col-md-4">
-										<div class="card mb-4">
-											<img class="card-img-top" src="http://placeholder.pics/svg/300x200" alt="Card image cap">
-											<div class="card-body">
-												<h5 class="card-title">Producto X</h5>
-												<p class="card-text">Some quick example text to build on the card title and.</p>
-												<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-													Ver más
-												</button>
-											</div>
-										</div>
-									</div>
-
 								</div>
 
-								<nav aria-label="Page navigation example">
-									<ul class="pagination justify-content-center">
-										<li class="page-item"><a class="page-link" href="#">Previous</a></li>
-										<li class="page-item"><a class="page-link" href="#">1</a></li>
-										<li class="page-item"><a class="page-link" href="#">2</a></li>
-										<li class="page-item"><a class="page-link" href="#">3</a></li>
-										<li class="page-item"><a class="page-link" href="#">4</a></li>
-										<li class="page-item"><a class="page-link" href="#">5</a></li>
-										<li class="page-item"><a class="page-link" href="#">6</a></li>
-										<li class="page-item"><a class="page-link" href="#">7</a></li>
-										<li class="page-item"><a class="page-link" href="#">8</a></li>
-										<li class="page-item"><a class="page-link" href="#">Next</a></li>
-									</ul>
-								</nav>
+								<div class="row">
+									<div class="col-12">										
+										<nav aria-label="Page navigation example">
+											<ul class="pagination justify-content-center">												
+												<li class="page-item"><a class="page-link" href="#">1</a></li>
+												<li class="page-item"><a class="page-link" href="#">2</a></li>
+												<li class="page-item"><a class="page-link" href="#">3</a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
 
 							</div>
 						</div>
-
-
 
 
 					</div>

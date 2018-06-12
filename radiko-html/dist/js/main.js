@@ -9,4 +9,8 @@ $(document).ready(function(){
         	$(headerHome).fadeOut();
         }
     });
+
+    // Activate tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+
 });

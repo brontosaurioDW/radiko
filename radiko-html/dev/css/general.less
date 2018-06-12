@@ -70,11 +70,11 @@ h3 {
 	border: 0;
 	border-radius: 10px;
 	text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 0 25px;
-    height: 50px;
-    line-height: 55px;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 0 25px;
+	height: 50px;
+	line-height: 55px;
 }
 
 .btn-primary {
@@ -84,21 +84,21 @@ h3 {
 	box-shadow: 0px 3px 0 #c74833;
 
 	&:hover {
-	    background-color: #50d2a4;
-	    border-color: #50d2a4;
-	    box-shadow: 0px 3px 0 #3cb78b;
+		background-color: #50d2a4;
+		border-color: #50d2a4;
+		box-shadow: 0px 3px 0 #3cb78b;
 	}
 
 	&:not(:disabled):not(.disabled):active, 
 	&:not(:disabled):not(.disabled).active, .show > 
 	&.dropdown-toggle {
-	    background-color: #50d2a4;
-	    border-color: #50d2a4;
+		background-color: #50d2a4;
+		border-color: #50d2a4;
 	}
 
 	&:focus, 
 	&.focus {
-	    box-shadow: 0 0 0 0.1rem rgb(225, 165, 189);
+		box-shadow: 0 0 0 0.1rem rgb(225, 165, 189);
 	}
 }
 
@@ -108,22 +108,22 @@ h3 {
 	box-shadow: 0px 3px 0 #C94B36;
 
 	&:hover {
-	    background: #DD624E;
-	    border-color: transparent;
-	    box-shadow: 0px 3px 0 #C94B36;
-	    opacity: .9;
+		background: #DD624E;
+		border-color: transparent;
+		box-shadow: 0px 3px 0 #C94B36;
+		opacity: .9;
 	}
 
 	&:not(:disabled):not(.disabled):active, 
 	&:not(:disabled):not(.disabled).active, .show > 
 	&.dropdown-toggle {
-	    background-color: #DD624E;
-	    border-color: transparent;
+		background-color: #DD624E;
+		border-color: transparent;
 	}
 
 	&:focus, 
 	&.focus {
-	    box-shadow: 0px 3px 0 #C94B36;
+		box-shadow: 0px 3px 0 #C94B36;
 	}
 }
 
@@ -162,3 +162,67 @@ h3 {
 		}
 	}
 }
+
+/* Huerta detalle */
+
+.huerta-content {
+	padding-top: 60px;
+}
+
+.huerta-title {
+	margin: 4rem auto;
+	padding: 1rem 3rem;
+	background-color: #DD964E;
+	color: #FFFFFF;
+}
+
+.huerta-buscar {
+	border: 1px solid #707070;
+	box-shadow: 10px 10px 0 #707070;
+}
+
+.huerta-list {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	background-color: #DD624E;
+	margin-bottom: 2rem;
+
+	.list-group {
+		margin-bottom: 1rem;
+	}
+	
+	.list-title {
+		font-weight: 600;
+		font-size: 1.2rem;
+	}
+
+	.list-group-item {
+		background-color: transparent;
+		color: #ffffff;
+		border: none;
+
+		&:hover:not(.list-title) {
+			background-color: softlight(#DD624E, #333333);
+		}
+
+		a {
+			color: #ffffff;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.huerta-productos {
+
+	.card {
+		margin-bottom: 30px;
+	}
+	
+	.card-img-top {
+		border: none;
+		border-radius: 0;
+	}
+}
+
