@@ -133,12 +133,13 @@ h3 {
   padding-top: 66px;
 }
 .huerta-title-wrapper {
-  background: url(../images/bk-huerta.jpg);
+  background: #C94B36 url(../images/bk-huerta.jpg) no-repeat center bottom;
+  background-blend-mode: multiply;
 }
 .huerta-title {
-  margin: 4rem auto;
+  margin: 6rem auto;
   padding: 1rem 3rem;
-  background-color: #DD964E;
+  background-color: #C94B37;
   color: #FFFFFF;
 }
 .huerta-buscar {
@@ -178,6 +179,9 @@ h3 {
 .huerta-productos .card-img-top {
   border: none;
   border-radius: 0;
+}
+.huerta-productos a {
+  cursor: pointer;
 }
 /* GRILLA DOBLE (EJ: HOME) */
 .grid-masonry {
