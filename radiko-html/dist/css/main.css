@@ -130,7 +130,7 @@ h3 {
   border-radius: 50%;
   line-height: 30px;
 }
-/* Huerta detalle */
+/* *** HUERTA DETALLE *** */
 .huerta-content {
   padding-top: 66px;
 }
@@ -145,6 +145,7 @@ h3 {
   background-color: #C94B37;
   color: #FFFFFF;
 }
+/* Huerta nav panels */
 .huerta-nav .nav {
   border: none;
 }
@@ -170,26 +171,23 @@ h3 {
   border: 1px solid #707070;
   box-shadow: 10px 10px 0 #707070;
 }
+/* Huerta lista aside */
 .huerta-list {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  background-color: #DD624E;
   margin-bottom: 2rem;
 }
 .huerta-list .list-group {
   margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 .huerta-list .list-title {
   font-weight: 600;
   font-size: 1.2rem;
 }
 .huerta-list .list-group-item {
-  background-color: transparent;
-  color: #ffffff;
   border: none;
 }
 .huerta-list .list-group-item:hover:not(.list-title) {
-  background-color: #cb3e2e;
+  background-color: #f0f0f0;
 }
 .huerta-list .list-group-item a {
   color: #ffffff;
@@ -197,6 +195,7 @@ h3 {
 .huerta-list .list-group-item a:hover {
   text-decoration: none;
 }
+/* Huerta grilla de productos */
 .huerta-productos .card {
   margin-bottom: 30px;
   border: none;
@@ -209,7 +208,6 @@ h3 {
   color: #fff;
   font-size: 1rem;
   font-weight: 700;
-  display: inline-block;
   padding: .5rem 1rem;
 }
 .huerta-productos .producto-precio {
@@ -232,10 +230,11 @@ h3 {
   text-align: center;
   line-height: 40px;
   padding: 0;
-  margin: 1rem;
+  margin: .5rem;
   color: #fff;
   font-weight: 700;
 }
+/* Huerta modal producto */
 .modal-producto .producto-title {
   background-color: #DD624E;
   color: #fff;
@@ -255,6 +254,25 @@ h3 {
   .listado-productos {
     flex-direction: row-reverse;
   }
+}
+/* *** RESULTADOS DE BUSQURDA *** */
+.resultado-text {
+  font-weight: 700;
+  background: #DD964E;
+  padding: 1rem 2rem;
+  color: #fff;
+  margin-right: 2rem;
+}
+.objeto-buscado {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.card-title.huerta {
+  background-color: #DD964E;
+}
+.form-control {
+  border-radius: 0;
+  box-shadow: 5px 5px 0 #707070;
 }
 /* GRILLA DOBLE (EJ: HOME) */
 .grid-masonry {
