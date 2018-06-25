@@ -143,25 +143,38 @@ footer ul {
 /*forms*/
 .registro {
   margin: auto; }
+  .registro input[type=email] {
+    width: 100%;
+    padding: 20px 70px 20px 15px;
+    border: 0; }
+  .registro .btn {
+    width: 100%;
+    height: 100%;
+    background-color: #50D2A4;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 15px; }
+  .registro .btn:hover {
+    background-color: #3fc093; }
 
-.registro input[type=email] {
-  width: 100%;
-  padding: 20px 70px 20px 15px;
-  border: 0; }
-
-.registro button {
-  width: 100%;
-  height: 100%;
-  background-color: #50D2A4;
-  color: #FFFFFF;
-  border: 0;
-  border-radius: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  margin-top: 15px; }
-
-.registro button:hover {
-  background-color: #3fc093; }
+.form-news {
+  width: 55%;
+  margin: 0 auto;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  display: box;
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
+  .form-news input {
+    margin-right: 20px; }
 
 @media screen and (min-width: 768px) {
   /*FOOTER*/
@@ -173,7 +186,7 @@ footer ul {
   h2 {
     font-size: 5rem; }
   /*forms*/
-  .registro button {
+  .registro .btn {
     margin-top: 0; }
   .registro .col-md-2 {
     padding-left: 0; }
