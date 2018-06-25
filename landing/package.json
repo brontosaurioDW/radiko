@@ -1,0 +1,18 @@
+{
+  "name": "radiko-landing",
+  "version": "1.0.0",
+  "description": "Radiko Landing",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Radiko",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

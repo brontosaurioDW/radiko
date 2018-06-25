@@ -1,0 +1,169 @@
+body {
+  background: #ffffff;
+  color: #333333;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*GENERALES*/
+h2{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+/*HEADER*/
+header{
+  min-height: 100vh;
+}
+.intro-fondo{
+  background: url(../images/bg-1.jpg) no-repeat center center #d44f3e;
+  color: #ffffff;
+  padding: 7rem 0 9rem 0;
+  text-align: center;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
+.intro h1{
+  background: url(../images/logo.png) no-repeat 0 0 transparent;
+  background-size: 100%;
+  padding: 0;
+  margin: 0 auto;
+  width: 270px;
+  height: 100px;
+  font-size: 0;
+}
+.intro form{
+  margin-top: 2rem;
+}
+
+
+/*SECCION BENEFICIOS*/
+
+.beneficios{
+  padding: 3rem 0;
+}
+
+.beneficio {
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid #333333;
+  margin-top: 5rem;
+  -webkit-box-shadow: 10px 10px 0px -2px rgba(51,51,51,1);
+  -moz-box-shadow: 10px 10px 0px -2px rgba(51,51,51,1);
+  box-shadow: 10px 10px 0px -2px rgba(51,51,51,1);
+}
+
+.row-beneficio .img {
+  height: 75px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.row-beneficio img{
+  width: 70px;
+  color: #DD624E;
+  fill: #DD624E;
+}
+
+.row-beneficio p{
+  margin-bottom: 0;
+}
+
+
+/*SECCION COMO-FUNCIONA*/
+
+.como-funciona{
+  background-color: #50D2A4;
+  color: #ffffff;
+  padding: 5rem 0 3rem 0;
+  -webkit-clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 0% 100%);
+}
+.como-funciona img{
+  display: block;
+  margin: auto;
+}
+.items-como{
+  margin-top: 1.5rem;
+}
+
+
+/*SECCION REGISTRO*/
+
+.suscripcion{
+  background: #DD624E;
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 0 4.2rem 0;
+}
+
+/*FOOTER*/
+
+footer {
+  background: #404040;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .logo-foo {
+  background: url(../images/logo-footer.png) no-repeat 0 0 transparent;
+  background-size: 100%;
+  color: transparent;
+  font-size: 0;
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 110px;
+  height: 40px;
+}
+
+footer h2,
+footer a,
+footer p,
+footer li {
+  color: #ffffff;
+}
+
+footer a {
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer ul {
+  margin: 0 0 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lista de redes sociales */
+
+.social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.social li {
+  margin: 0 7px;
+}
+
+.social li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: white;
+  text-align: center;
+  color: #616161;
+  border-radius: 50%;
+  line-height: 30px;
+}
