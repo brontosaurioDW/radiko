@@ -1,223 +1,192 @@
 <!DOCTYPE HTML>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Rádiko</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!--BOOTSTRAP CSS-->
-	<link rel="stylesheet" href="css/bootstrap.css" />
-
-	<!--FONTS-->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-
-	<!--FONTS AWSOME-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	
-	<!--AOS-->
-	<link rel="stylesheet" type="text/css" href="css/aos.css">	
-
-	<!--RADIKO CSS-->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-</head>
-<body>
-	<header>
-		<div class="intro-fondo">
-			<div class="container intro">
-				<h1>Rádiko</h1>
-				<h2>Tu nuevo super</h2>
-				<p>Te presentamos a Rádiko, una nueva forma de contactarte con lo orgánico</p>
-				<div class="registro">
-					<p>Registrate y obtené un descuento en tu primera compra</p>
-				<!-- <div class="row justify-content-center">
-          <div class="col-md-4">
-            <input type="email" name="email" placeholder="Ingresa tu email">
-          </div>
-          <div class="col-md-2">
-            <button type="submit" class="btn btn-primary">Registrarme</button>
-          </div>
-        </div> -->
-
-        <!-- Begin MailChimp Signup Form -->
-        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-        <div id="mc_embed_signup">
-        	<form action="https://none.us3.list-manage.com/subscribe/post?u=6b4af2e3119c8cfaa106cb0be&amp;id=0ab95085e9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        		<div id="mc_embed_signup_scroll" class="form-news">
-        			<label for="mce-EMAIL"></label>
-        			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Ingresa tu email" required>
-        			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        			<div style="position: absolute; left: -5000px;" aria-hidden="true">
-        				<input type="text" name="b_6b4af2e3119c8cfaa106cb0be_0ab95085e9" tabindex="-1" value="">
-        			</div>
-        			<div class="clear">
-        				<input type="submit" value="Suscribirse!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
-        			</div>
-        		</div>
-        	</form>
-        </div>
-        <!--End mc_embed_signup-->
-      </div>
-    </div>
-  </div>
-</header>
-<main>
-	<section class="beneficios">
-		<div class="container">
-			<h2>¿Por qué Rádiko?</h2>
-			<div class="row row-beneficio">
-				<div class="col-md-4">
-					<div class="beneficio" data-aos="fade-up" data-aos-delay="100">
-						<div class="img">
-							<img src="images/carrot.svg" alt="Icono de zanahoria">
-						</div>
-						<h3>Te unimos a lo sano</h3>
-						<p>
-							Mediante nuestra plataforma vas a poder conectarte con Huertas y elegir los productos orgánicos que quieras consumir. 
-						</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="beneficio" data-aos="fade-up" data-aos-delay="300">
-						<div class="img">
-							<img src="images/plate.svg" alt="Icono de un camión">
-						</div>
-						<h3>Fácil y rápido</h3>
-						<p>
-							Con tan sólo algunos clicks vas a poder armar tu pedido y programar los envíos. 
-						</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="beneficio" data-aos="fade-up" data-aos-delay="500">
-						<div class="img">
-							<img src="images/truck.svg" alt="Icono de un plato">
-						</div>
-						<h3>Cómodo</h3>
-						<p>
-							Recibilo en la puerta de tu casa y realizá el pago de la forma más cómoda. 
-						</p>
+	<head>
+		<meta charset="UTF-8">
+		<title>Rádiko</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--BOOTSTRAP CSS-->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<!--FONTS-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+		<!--FONTS AWSOME-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		
+		<!--AOS-->
+		<link rel="stylesheet" type="text/css" href="css/aos.css">
+		<!--RADIKO CSS-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="intro-fondo">
+				<div class="container intro">
+					<h1>Rádiko</h1>
+					<h2>Tu nuevo super</h2>
+					<p>Te presentamos a Rádiko, una nueva forma de contactarte con lo orgánico</p>
+					<div class="registro">
+						<p>Registrate y obtené un descuento en tu primera compra</p>
+						<form method="POST" action="newsletter.php" class="row justify-content-center">
+							<div class="col-md-4">
+								<input type="email" name="email" placeholder="Ingresa tu email">
+							</div>
+							<div class="col-md-2">
+								<button type="submit" class="btn btn-primary">Registrarme</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<section class="como-funciona">
-		<div class="container">
-			<h2>¿Cómo funciona?</h2>
-			<div class="row justify-content-center align-items-center items-como">
-				<div class="col-md-3 items-izq">
-					<div class="row">
-						<div class="col" data-aos="fade-right" data-aos-delay="0">
-							<h3>Buscá</h3>
-							<p>Encontrá la Huerta o Producto que querés</p>
+		</header>
+		<main>
+			<section class="beneficios">
+				<div class="container">
+					<h2>¿Por qué Rádiko?</h2>
+					<div class="row row-beneficio">
+						<div class="col-md-4">
+							<div class="beneficio" data-aos="fade-up" data-aos-delay="100">
+								<div class="img">
+									<img src="images/carrot.svg" alt="Icono de zanahoria">
+								</div>
+								<h3>Te unimos a lo sano</h3>
+								<p>
+									Mediante nuestra plataforma vas a poder conectarte con Huertas y elegir los productos orgánicos que quieras consumir.
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col" data-aos="fade-right" data-aos-delay="150">
-							<h3>Elegí</h3>
-							<p>Accedé a la información de cada Huerta y a los detalles de cada producto y armá tu pedido</p>
+						<div class="col-md-4">
+							<div class="beneficio" data-aos="fade-up" data-aos-delay="300">
+								<div class="img">
+									<img src="images/plate.svg" alt="Icono de un camión">
+								</div>
+								<h3>Fácil y rápido</h3>
+								<p>
+									Con tan sólo algunos clicks vas a poder armar tu pedido y programar los envíos.
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col" data-aos="fade-right" data-aos-delay="300">
-							<h3>Comprá</h3>
-							<p>Ponete en contacto con la Huerta y coordiná cuándo querés recibir tu compra</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col" data-aos="fade-right" data-aos-delay="450">
-							<h3>Disfrutá</h3>
-							<p>Viví una vida más sana consumiendo orgánico</p>
+						<div class="col-md-4">
+							<div class="beneficio" data-aos="fade-up" data-aos-delay="500">
+								<div class="img">
+									<img src="images/truck.svg" alt="Icono de un plato">
+								</div>
+								<h3>Cómodo</h3>
+								<p>
+									Recibilo en la puerta de tu casa y realizá el pago de la forma más cómoda.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-8 d-none d-sm-block" data-aos="fade-left" data-aos-delay="600">
-					<img src="images/mockup_responsive_radiko.png" alt="imagen de la aplicación de Rádiko">
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="suscripcion">
-		<div class="container">
-			<form method="post" action="#" class="registro">
-				<p data-aos="fade-down">Registrate y obtené un descuento en tu primera compra</p>
-
-				<div class="row justify-content-center" data-aos="fade-up">
-					<div class="col-md-4">
-						<input type="email" name="email" placeholder="Ingresa tu email">
+			</section>
+			<section class="como-funciona">
+				<div class="container">
+					<h2>¿Cómo funciona?</h2>
+					<div class="row justify-content-center align-items-center items-como">
+						<div class="col-md-3 items-izq">
+							<div class="row">
+								<div class="col" data-aos="fade-right" data-aos-delay="0">
+									<h3>Buscá</h3>
+									<p>Encontrá la Huerta o Producto que querés</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col" data-aos="fade-right" data-aos-delay="150">
+									<h3>Elegí</h3>
+									<p>Accedé a la información de cada Huerta y a los detalles de cada producto y armá tu pedido</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col" data-aos="fade-right" data-aos-delay="300">
+									<h3>Comprá</h3>
+									<p>Ponete en contacto con la Huerta y coordiná cuándo querés recibir tu compra</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col" data-aos="fade-right" data-aos-delay="450">
+									<h3>Disfrutá</h3>
+									<p>Viví una vida más sana consumiendo orgánico</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-8 d-none d-sm-block" data-aos="fade-left" data-aos-delay="600">
+							<img src="images/mockup_responsive_radiko.png" alt="imagen de la aplicación de Rádiko">
+						</div>
 					</div>
-					<div class="col-md-2">
-						<button type="submit" class="btn btn-primary">Registrarme</button>
+				</div>
+			</section>
+			<section class="suscripcion">
+				<div class="container">
+					<form method="post" action="#" class="registro">
+						<p data-aos="fade-down">Registrate y obtené un descuento en tu primera compra</p>
+						<div class="row justify-content-center" data-aos="fade-up">
+							<div class="col-md-4">
+								<input type="email" name="email" placeholder="Ingresa tu email">
+							</div>
+							<div class="col-md-2">
+								<button type="submit" class="btn btn-primary">Registrarme</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<a href="#" class="logo-foo"> Rádiko </a>
+						<p> Tu nuevo super </p>
+					</div>
+					<div class="col-md-3">
+						<ul>
+							<li>
+								<a href="#">Preguntas frecuentes</a>
+							</li>
+							<li>
+								<a href="#">Legales</a>
+							</li>
+							<li>
+								<a href="#">Términos y condiciones</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul>
+							<li>
+								<a href="#">Contacto</a>
+							</li>
+							<li>
+								<a href="#">Tengo una huerta</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<div class="social">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fab fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-
-			</form>
-		</div>
-	</section>
-</main>
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3">
-				<a href="#" class="logo-foo"> Rádiko </a>
-				<p> Tu nuevo super </p>
 			</div>
-			<div class="col-md-3">
-				<ul>
-					<li>
-						<a href="#">Preguntas frecuentes</a>
-					</li>
-					<li>
-						<a href="#">Legales</a>
-					</li>
-					<li>
-						<a href="#">Términos y condiciones</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-md-3">
-				<ul>
-					<li>
-						<a href="#">Contacto</a>
-					</li>
-					<li>
-						<a href="#">Tengo una huerta</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-md-3">
-				<div class="social">
-					<ul>
-						<li>
-							<a href="#">
-								<i class="fab fa-instagram"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fab fa-facebook-f"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
-
-<!--BOOTSTRAP JS-->
-<script src="js/bootstrap.js" ></script>
-
-<!--AOS JS-->
-<script src="js/aos.js" ></script>
-
-<script>
-	AOS.init({
-		easing: 'ease-in-out-sine'
-	});
-</script>
-
-
-</body>
+		</footer>
+		<!--BOOTSTRAP JS-->
+		<script src="js/bootstrap.js" ></script>
+		<!--AOS JS-->
+		<script src="js/aos.js" ></script>
+		<script>
+			AOS.init({
+				easing: 'ease-in-out-sine'
+			});
+		</script>
+	</body>
 </html>
