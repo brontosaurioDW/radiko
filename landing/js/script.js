@@ -55,7 +55,7 @@ $(function()
 	 	else return true;
 	 }
 
-	 $('#form-newsletter').submit(function()
+	 $('#form-newsletter, #form-newsletter-top').submit(function()
 	 {
 	 	var $form = $(this);
 	 	if (!jqxhr && validateForm($form))
