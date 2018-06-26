@@ -2,57 +2,80 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 
+$servername="localhost";
+$username="radiko";
+$password="radiko1357";
+$dbname="radiko";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
 function validateEmail($email) {
   return filter_var($email, FILTER_VALIDATE_EMAIL);
 }   
 
-if (!empty($_POST) && 
-  !empty($_POST['email']) && 
-  validateEmail($_POST['email']))
-{
-  require_once('vendor/autoload.php');
+if (!empty($_POST) && !empty($_POST['email']) && validateEmail($_POST['email'])) {
 
+  $emailExists = mysqli_query($conn, "SELECT * FROM usuarios_newsletter WHERE EMAIL = '". $_POST['email'] ."'");
 
-  $mail = new PHPMailer;
+  if (mysqli_num_rows($emailExists) > 0){
+    echo -2;
+    //$status = 'error';
+    //$message = 'Este email ya ha sido registrado';
+  } else {
+    $addEmail = "INSERT INTO usuarios_newsletter (EMAIL) VALUES ('" . $_POST['email'] . "')";
 
-  $mail->From = "info@radiko.com";
-  $mail->FromName = "Radiko";
+    $conn->query($addEmail);
 
-  $mail->addAddress("es.hotes@gmail.com", "Emiliano");
+    require_once('vendor/autoload.php');
 
-  $mail->addReplyTo($_POST['email']);
+    $mail = new PHPMailer;
 
-  $mail->isHTML(true);
+    $mail->From = "info@radiko.com";
+    $mail->FromName = "Radiko";
 
-  $mail->Subject = "Nuevo usuario registrado en Newsletter";
-  $mail->Body = "";
-  $mail->Body .= "<h3>Mensaje enviado desde Radiko</h3>";
-  $mail->Body .= "<b>Email: </b>".$_POST['email']."<br>";
+    $mail->addAddress("florenciasepulveda.26@gmail.com", "Flor");
 
-  if(!$mail->send()) 
-  {
-    error_log("Error al enviar el email: " . $mail->ErrorInfo);
-    echo 0;
-  } 
-  else 
-  {
+    $mail->addReplyTo($_POST['email']);
 
-    $mail->ClearAddresses();
-    $mail->AddAddress($_POST['email']);
-    $mail->Body = file_get_contents('mail_example.html') ;
-    $mail->Send();
+    $mail->isHTML(true);
 
-    echo 1;
+    $mail->Subject = "Nuevo usuario registrado en Newsletter";
+    $mail->Body = "";
+    $mail->Body .= "<h3>Mensaje enviado desde Radiko</h3>";
+    $mail->Body .= "<b>Email: </b>" . $_POST['email'] . "<br>";
 
-    header('Location: ' . $_SERVER['HTTP_REFERER']);
+    if(!$mail->Send())  {
+      /*error_log("Error al enviar el email: " . $mail->ErrorInfo);*/
+      //$status = 'success';
+      //$message = 'Hubo un error al enviar el formulario';  
+      echo 0;
+
+    }  else  {
+
+      $mail->ClearAddresses();
+      $mail->AddAddress($_POST['email']);
+      $mail->Body = file_get_contents('mail_example.html') ;
+      $mail->Send();
+
+      /* header('Location: ' . $_SERVER['HTTP_REFERER']);*/
+
+      //$status = 'success';
+      //$message = '¡Te has suscrito con éxito!';  
+      echo 1;
+    }
   }
-}
-else
-{
+} else {
+  //$status = 'error';
+  //$message = 'Por favor corrobora los datos o ingresa un email correcto';
   echo -1;
 }
 
+// $data = array(
+//   'status' => $status,
+//   'message' => $message
+// );
 
+// return json_encode($data);
 
+// exit;
 
-?>
