@@ -177,6 +177,21 @@ footer ul {
   .form-news input {
     margin-right: 20px; }
 
+.modal-content {
+  margin-top: 30vh;
+  border-radius: 0;
+  border: 0;
+  -webkit-box-shadow: 10px 10px 0px -2px #333333;
+  -moz-box-shadow: 10px 10px 0px -2px #333333;
+  box-shadow: 10px 10px 0px -2px #333333; }
+
+.modal-header {
+  padding: 25px 25px 0 25px;
+  border-bottom: 0; }
+
+.modal-body {
+  padding: 0 25px 25px 25px; }
+
 @media screen and (min-width: 768px) {
   /*FOOTER*/
   footer {
