@@ -4,9 +4,9 @@ $(document).ready(function(){
 
 	$(window).scroll(function(){
         if ($(window).scrollTop() > 300){
-            $(headerHome).fadeIn();
+            $(headerHome).addClass('sticky');
         } else {
-        	$(headerHome).fadeOut();
+        	$(headerHome).removeClass('sticky');
         }
     });
 
