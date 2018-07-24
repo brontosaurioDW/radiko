@@ -89,6 +89,49 @@ h3 {
   border-radius: 50%;
   line-height: 30px;
 }
+/*****************/
+.download-app {
+  background: #656895;
+  margin-top: 165px;
+}
+.download-app > div {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 350px;
+}
+.download-app > div:after {
+  content: '';
+  background: url(../images/mobile.png);
+  width: 440px;
+  height: 495px;
+  position: absolute;
+  right: -60px;
+  bottom: 0;
+  background-size: cover;
+}
+.download-app h2,
+.download-app p {
+  color: #fff;
+}
+.download-app h2 {
+  font-weight: bold;
+  font-size: 39px;
+}
+.download-app p {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 135%;
+  margin-top: 20px;
+}
+.download-app ul {
+  margin: 0;
+  padding: 0;
+}
+.download-app .download-btn {
+  margin: 0;
+  padding: 0;
+  max-width: 300px;
+}
 /* GRILLA DOBLE (EJ: HOME) */
 .grid-masonry {
   padding: 40px 0;
@@ -293,10 +336,11 @@ footer ul {
   padding: 0;
   list-style: none;
 }
-footer .download-btn li {
+.download-btn li {
   margin-bottom: 20px;
+  list-style: none;
 }
-footer .download-btn img {
+.download-btn img {
   max-width: 160px;
   height: auto;
 }
@@ -304,10 +348,10 @@ footer .download-btn img {
   footer {
     text-align: left;
   }
-  footer .download-btn li {
+  .download-btn li {
     margin-bottom: 10px;
   }
-  footer .download-btn img {
+  .download-btn img {
     max-width: 100%;
   }
 }
@@ -319,19 +363,19 @@ footer .download-btn img {
     margin: 25px 0 0 0;
     line-height: 200%;
   }
-  footer .download-btn ul {
+  footer .social ul {
+    justify-content: flex-start;
+    margin-left: -10px;
+  }
+  .download-btn ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 25px -2% 0;
   }
-  footer .download-btn li {
+  .download-btn li {
     width: 46%;
     margin: 0 2%;
-  }
-  footer .social ul {
-    justify-content: flex-start;
-    margin-left: -10px;
   }
 }
 .auth {
@@ -693,9 +737,10 @@ footer .download-btn img {
   font-weight: 600;
 }
 .block-feature {
-  margin: 85px 0;
+  margin-top: 85px;
+  margin-bottom: 85px;
 }
-.block-feature li {
+.block-feature > div {
   list-style: none;
   color: #ffffff;
 }
