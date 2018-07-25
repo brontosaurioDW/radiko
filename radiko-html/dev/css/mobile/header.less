@@ -1,9 +1,7 @@
 header {
-	position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
-	z-index: 10;
+	-webkit-transition: .3s;
+	transition: .3s;
+	height: 54px;
 
 	h1 {
 		font-size: 0;
@@ -13,17 +11,26 @@ header {
 		transition: .3s;
 		-webkit-transition: .3s;
 
-		h1 {
-			display: none;
+		.navbar-brand {
+			width: 0;
+			overflow: hidden;
 			-webkit-transition: .3s;
 			transition: .3s;
 		}
 
 		&.sticky {
-			h1 {
-				display: block;
+			.navbar-brand {
+				width: 140px;
 			}
 		}
+	}
+
+	&.sticky {
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		z-index: 10;
 	}
 
 	.navbar-brand {
