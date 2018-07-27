@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Radiko - Finalizar</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="dist/css/vendor.css">
+		<link rel="stylesheet" type="text/css" href="dist/css/main.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<div class="container">
+					<h1><a class="navbar-brand" href="#">Rádiko</a></h1>
+				</div>
+			</nav>
+		</header>
+
+		<main class="huerta-content checkout confirmation">
+			<section class="huerta-title-wrapper">
+				<div class="container-fluid">
+					<div class="row justify-content-center align-items-center">
+						<div>
+							<h2 class="huerta-title">¡Compra realizada con éxito!</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="checkout-step last-step">
+				<div class="container">
+					<div class="tab-content m-5">	
+
+						<p class="ok">
+							¡Listo! Ya recibimos tu pedido y le avisamos a la huerta. Sólo queda relajarse y esperar el pedido.
+							Acá vas a encontrar la información de tu compra, pero no te preocupes que también te la mandamos por mail. 
+							Por cualquier duda que tengas podés chatear directamente con la huerta haciendo click en <span class="bold">contactar</span>.
+						</p>			
+
+						<div class="row justify-content-between">
+							<div class="col-md-6">
+								<div class="grey-box">
+
+									<div class="title text-left">
+										<h2>Orden</h2>
+									</div>
+
+									<div class="row">
+										<div class="col-md-12">											
+											<ul class="m-0">										
+												<li class=" d-flex justify-content-between align-items-center">
+													<span>Pedido número:</span>
+													<span class="price-black bold">487</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-5">
+								
+							</div>
+						</div>
+					</div>
+				</div>				
+			</section>
+		</main>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<a href="#" class="logo-foo"> Rádiko </a>
+						<p> Tu nuevo super </p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="dist/js/vendor.js"></script>
+		<script src="dist/js/main.js"></script>
+
+		<script>
+			$('ul.times').each(function(index, el) {
+				var timeLink = $(this).find('.js-time');
+
+				$(timeLink).each(function(index, el) {
+					$(this).on('click', function(event) {
+						event.preventDefault();
+						$('.js-time').removeClass('active');
+						$(this).addClass('active');
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

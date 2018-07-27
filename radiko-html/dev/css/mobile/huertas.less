@@ -41,30 +41,37 @@
 
 /* Huerta nav panels */
 .huerta-nav {
-	background: #333333;
+	margin-top: 40px;
 
-	.nav {
-		border: none;
-	}
-
-	.disabledTab  a{
+	.disabledTab  a {
 		pointer-events: none;
 	}
 
+	.nav-tabs {
+		border-bottom: 2px solid #e48171;
+		padding: 0 3rem;
+	}
+
 	.nav-item {
-		width: 100%;
 
 		.nav-link {
 			border: none;
-			border-radius: 0;
-			opacity: 0.8;
-			color: #fff;
-			font-weight: 700;
-			padding: 1rem 2rem;
+		    border-radius: 5px 5px 0 0;
+		    opacity: 0.8;
+		    color: #DD624E;
+		    font-weight: 700;
+		    padding: 10px;
+		    text-transform: uppercase;
+		    font-size: 1.2rem;
 
 			&.active {
-				background-color: transparent;
+				background-color: #fff;
 				opacity: 1;
+				border: 2px solid #DD624E;
+				position: relative;
+				top: 1px;
+				padding: 7px 10px 11px 10px;
+				border-bottom: 0;
 			}
 		}
 	}

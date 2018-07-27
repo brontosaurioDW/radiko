@@ -31,10 +31,11 @@ h3 {
 	font-size: 1.4em;
 }
 
-.title {
+.title.title {
 	text-align: center;
 
-	h2 {
+	h2,
+	h3 {
 	    background: #DD624E;
 	    color: #fff;
         text-align: center;
@@ -48,19 +49,55 @@ h3 {
 	}
 }
 
+.title.title.small {
+	text-align: center;
+
+	h2,
+	h3 {
+        padding: 0 10px;
+        min-width: unset;
+        font-size: 20px;
+        margin-bottom: 10px;
+	}
+
+	span {
+		display: block;
+		font-size: 16px;
+	}
+}
+
+.title.title.x-small {
+	text-align: center;
+
+	h2,
+	h3 {
+		padding: 0 10px;
+	    min-width: unset;
+	    font-size: 17px;
+	    margin-bottom: 10px;
+	    line-height: 29px;
+	}
+}
+
+.remove-icon {
+	font-weight: bold;
+	color: #DD624E;
+	font-size: 20px;
+}
+
 
 /* Clases generales */
 
 .bold {
-	font-weight: 700;
+	font-weight: 700!important;
 }
 
 .semi-bold {
-	font-weight: 500;
+	font-weight: 500!important;
 }
 
 .light {
-	font-weight: 300;
+	font-weight: 300!important;
 }
 
 .uppercase {
