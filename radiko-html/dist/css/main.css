@@ -303,6 +303,17 @@ footer ul {
   display: inline-block;
   margin-top: 15px;
 }
+.auth .mensaje-exito {
+  color: #00d2a3;
+  font-size: 21px;
+  text-align: center;
+}
+.auth .mensaje-exito p:first-of-type {
+  font-size: 25px;
+}
+.auth .mensaje-exito .btn {
+  float: none;
+}
 @media screen and (min-width: 768px) {
   .auth {
     padding-bottom: 35vh;
@@ -711,6 +722,9 @@ footer ul {
   margin-top: 15px;
   border-top: 2px solid #50d2a4;
 }
+.add-address {
+  margin-top: 30px;
+}
 .grey-box {
   background: #fafafa;
   padding: 25px 30px;
@@ -780,6 +794,11 @@ footer ul {
   line-height: 190%;
   font-size: 16px;
   margin-bottom: 50px;
+}
+.checkout.confirmation .btn {
+  margin-top: 25px;
+  line-height: 39px;
+  font-size: 16px;
 }
 .simple-feature {
   padding: 0;
@@ -876,15 +895,18 @@ footer ul {
 .checkbox input + span {
   line-height: normal;
   cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
 }
 .checkbox input + span:before {
   content: '';
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   margin-right: 15px;
   border: 1px solid #333;
   width: 20px;
   height: 20px;
+  box-shadow: 2px 2px 0 #707070;
 }
 .checkbox input:checked + span:before {
   content: "\f00c";
@@ -934,6 +956,35 @@ footer ul {
   color: #ffffff;
   border: 1px solid #50D2A4;
   background: #50D2A4;
+}
+.form-boxed {
+  margin-top: 20px;
+}
+.form-boxed label {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+}
+.form-boxed label span {
+  font-weight: normal;
+}
+.form-boxed .row-form {
+  margin-bottom: 25px;
+}
+.form-boxed input[type="text"],
+.form-boxed input[type="phone"],
+.form-boxed textarea {
+  border: 1px solid #707070;
+  width: 100%;
+  padding: 0 15px;
+  line-height: 45px;
+  box-shadow: 5px 5px 0 #707070;
+  outline: none;
+}
+.form-boxed textarea {
+  resize: none;
+  line-height: 140%;
+  padding: 15px;
 }
 /* HUERTA DETALLE */
 .huerta-content {
@@ -1301,7 +1352,7 @@ h3 {
   padding: 0 10px;
   min-width: unset;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 .title.title.small span {
   display: block;

@@ -29,16 +29,19 @@
 	input + span {
 		line-height: normal;
 		cursor: pointer;
+		display: inline-block;
+		vertical-align: middle;
 	}
 
 	input + span:before {
 		content: '';
 		display: inline-block;
-		vertical-align: middle;
+		vertical-align: top;
 		margin-right: 15px;
 		border: 1px solid #333;
 		width: 20px;
 		height: 20px;
+		box-shadow: 2px 2px 0 #707070;
 	}
 
 	input:checked + span:before {
@@ -94,5 +97,40 @@
 		color: #ffffff;
 		border: 1px solid #50D2A4;
 		background: #50D2A4;
+	}
+}
+
+.form-boxed {
+	margin-top: 20px;
+
+	label {
+		display: block;
+		font-size: 20px;
+		font-weight: 500;
+
+		span {
+			font-weight: normal;
+		}
+	}
+
+	.row-form {
+		margin-bottom: 25px;
+	}
+
+	input[type="text"],
+	input[type="phone"],
+	textarea {
+		border: 1px solid #707070;
+		width: 100%;
+		padding: 0 15px;
+		line-height: 45px;
+		box-shadow: 5px 5px 0 #707070;
+		outline: none;
+	}
+
+	textarea {
+	    resize: none;
+	    line-height: 140%;
+	    padding: 15px;
 	}
 }
