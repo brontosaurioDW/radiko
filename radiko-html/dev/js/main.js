@@ -20,11 +20,25 @@ $(document).ready(function(){
 
     $(".js-btn-agregar").on("click", function(){ 
 
+        event.preventDefault();
         console.log("hala");
         //$("#js-dummy-counter").removeClass('hidden');
 
 
      });
+
+
+
+     $( "#fuck" ).click(function() {
+        event.preventDefault();
+        alert( "puta" );
+    });   
+
+
+     $('#fuck').on('click', function() {
+        event.preventDefault();
+        alert('hola');
+});
     
 
 });
