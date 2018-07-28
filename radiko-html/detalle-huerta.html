@@ -368,6 +368,7 @@
 				</div>
 				
 			</section>
+			
 			<!-- Modal -->
 			<div class="modal fade" id="producto-detalle" tabindex="-1" role="dialog" aria-labelledby="producto-detalle" aria-hidden="true">
 				<div class="modal-dialog modal-lg" role="document">
@@ -384,33 +385,35 @@
 										<img class="img-fluid mb-3" src="dist/images/p-1.jpg" alt="tomates">
 									</div>
 									<div class="col-md-6">
-										
-										<h3 class="producto-title">Tomate</h3>
-										<p><span class="producto-precio">$40</span> x kg.</p>
+										<div>
+											<h3 class="producto-title">Tomate</h3>
+										</div>
+										<div>
+											<h4 class="producto-title huerta"><a href="detalle-huerta.html">Tallo Verde</a></h4>
+										</div>
+										<p class="producto-precio"><span>$40</span> x kg.</p>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut error officia placeat illo alias cum minima dignissimos accusantium earum incidunt.</p>
 										
 										<form>
 											<div class="form-group row">
-												<label for="variedad" class="col-lg-3 col-form-label">Variedad</label>
-												<div class="col-lg-9">
-													
-													<select class=" form-control custom-select mr-sm-2" id="variedad">
+												<label for="cantidad" class="col-12 col-lg-3 col-form-label">Cantidad</label>
+												<div class="col-12 col-lg-9">
+													<select class=" form-control custom-select mr-sm-2" id="cantidad">
 														<option selected>Elegir...</option>
-														<option value="1">Variedad 1</option>
-														<option value="2">Variedad 2</option>
-														<option value="3">Variedad 3</option>
+														<option value="1">1 kg</option>
+														<option value="2">2 kg</option>
+														<option value="3">3 kg</option>
 													</select>
 												</div>
 											</div>
 											<div class="form-group row">
-												<label for="cantidad" class="col-12 col-lg-3 col-form-label">Cantidad</label>
-												<div class="col-12 col-lg-9">
-													<input type="number" class="form-control" id="cantidad" placeholder="1">
-												</div>
-											</div>
-											<div class="form-group row">
+<<<<<<< HEAD
 												<div class="col-12 boton-agregar">
 													<button class="btn btn-terciary btn-small js-btn-agregar" data-dismiss="modal">Agregar</button>
+=======
+												<div class="col-12">
+													<a href="confirmacion-paso-1.html" class="btn btn-terciary btn-small">Comprar</a>
+>>>>>>> origin/master
 												</div>
 											</div>
 										</form>
