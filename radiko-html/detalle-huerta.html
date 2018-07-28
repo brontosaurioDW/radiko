@@ -36,8 +36,9 @@
 								<a class="nav-link" href="registro.html">Registrate</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#" data-toggle="tooltip" data-placement="right" title="Tooltip on top">
+								<a class="nav-link nav-cart" href="#" data-toggle="tooltip" data-placement="right" title="Tooltip on top">
 									<i class="fas fa-shopping-cart"></i>
+									<span class="dummy-qty d-none" id="js-dummy-qty">1</span>
 								</a>
 							</li>
 						</ul>
@@ -53,6 +54,30 @@
 					</div>
 				</div>
 			</section>
+			
+			<div class="container d-none"	id="js-dummy-alert">
+				<div class="row">
+					<div class="col-12">
+						<div class="alert dummy-alert alert-dismissible fade show" role="alert">
+							<div class="row">
+								<div class="col-6">
+									<p class="bold">¡Agregaste un producto al carrito!</p>
+								</div>
+								<div class="col-6 text-right">
+									<a href="confirmacion-paso-1.html">Ver carrito</a>
+								</div>
+							</div>
+						  
+							
+						  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						    <span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
 			<div class="huerta-nav">
 				<div class="container">
 					<div class="row">
@@ -409,9 +434,7 @@
 											<div class="form-group row">
 
 												<div class="col-12 boton-agregar">
-													<button class="btn btn-terciary btn-small js-btn-agregar">Agregar</button>
-													<a id="fuck" href="#">fuck</a>
-													<div><a class="js-btn-agregar">hala</a></div>
+													<button class="btn btn-terciary btn-small" id="js-btn-agregar" data-dismiss="modal" onclick="myFunction()">Agregar</button>
 <!--
 												<div class="col-12">
 													<a href="confirmacion-paso-1.html" class="btn btn-terciary btn-small">Agregar</a>
@@ -497,3 +520,16 @@
 		<script src="dist/js/main.js"></script>
 	</body>
 </html>
+
+<script>
+	
+	function myFunction() {
+    var dummyQty = document.getElementById("js-dummy-qty");
+    var dummyAlert = document.getElementById("js-dummy-alert");
+
+    dummyQty.classList.remove("d-none");
+    dummyAlert.classList.remove("d-none");
+
+}
+
+</script>
