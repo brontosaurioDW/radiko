@@ -1,0 +1,56 @@
+.search {
+	background: url(../images/bg-1.jpg) no-repeat center center #d44f3e;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #ffffff;
+	height: 70vh;
+	min-height: 500px;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-ms-grid-row-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align: center;
+	padding: 55px 0;
+	
+	h2 {
+		background: url(../images/logo.png) no-repeat 0 0 transparent;
+		background-size: 100%;
+		padding: 0;
+		margin: 0 auto;
+		width: 270px;
+		height: 100px;
+	}
+}
+
+.row-search {
+	margin: 10px 0;
+	
+	input[type="text"] {
+		display: block;
+	    width: 100%;
+	    margin: 0;
+	    padding: 20px 70px 20px 15px;
+	    border: 0;
+	    background: white;
+	    outline: none;
+	}
+
+	.btn-search {
+		background: transparent;
+	    border: 0;
+	    color: #7d7d7d!important;
+	    font-size: 25px;
+	    position: absolute;
+	    right: 10px;
+	    top: 13px;
+	    width: 40px;
+	    height: 40px;
+	    outline: none;
+	}
+}
+
+@import url('tablet/search.less');
+@import url('desktop/search.less');
