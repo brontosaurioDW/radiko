@@ -4,21 +4,8 @@
 	box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'goboldregular';
-    src: url('fonts/gobold_regular-webfont.eot');
-    src: url('fonts/gobold_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/gobold_regular-webfont.woff2') format('woff2'),
-         url('fonts/gobold_regular-webfont.woff') format('woff'),
-         url('fonts/gobold_regular-webfont.ttf') format('truetype'),
-         url('fonts/gobold_regular-webfont.svg#goboldregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 .banner-wrapper {
-	background: url('img/img-minificada-400.jpg') no-repeat right center #ffc773;
+	background: url('http://www.radiko.com.ar/banner/img/img-minificada-400.jpg') no-repeat right center #ffc773;
 	background-size: 250%;
 	margin: 0 auto; 
 	width: 336px;
@@ -86,7 +73,7 @@
 
 .anim-letras {
 	color: white;
-    font-family: 'goboldregular';
+    font-family: 'Anton', sans-serif;
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
