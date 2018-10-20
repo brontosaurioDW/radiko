@@ -1,0 +1,49 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-shadow: border-box;
+}
+
+body {
+	font-size: 14px;
+	font-family: sans-serif;
+	background: $rdk-grey-lg;
+}
+
+a,
+button {
+	outline: none;
+	text-decoration: none;
+	transition: .3s;
+}
+
+h2 {
+	font-size: 38px;	
+	margin-bottom: 20px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.flex {
+	display: flex;
+}
+
+.dashboard {
+	display: flex;
+
+	.col-left {
+		background: $rdk-grey-dk;
+		width: 20%;
+		max-width: 250px;
+		padding: 30px;
+	}
+
+	.col-right {
+		background: $rdk-grey-lg;
+		width: 80%;
+		padding: 30px;
+	}
+}
+

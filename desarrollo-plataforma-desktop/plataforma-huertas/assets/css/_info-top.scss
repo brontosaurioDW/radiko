@@ -1,0 +1,31 @@
+.info-top {
+	width: 100%;
+	margin-bottom: 25px;
+
+	ul {
+		display: flex;
+		margin: 0 -1%;
+	}
+
+	li {
+		width: 24%;
+		margin: 0 1%;
+		background: red;
+		display: flex;
+		align-items: center;
+		height: 100px;
+
+		span {
+			span {
+				display: block;
+				font-size: 23px;
+			}
+		}
+	}
+
+	a {
+		display: block;
+		padding: 0 20px;
+		color: $white;
+	}
+}
