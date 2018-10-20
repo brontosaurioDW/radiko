@@ -48,7 +48,6 @@ h1 {
 		}
 
 		i {
-			color: $rdk-grey-lg;
 			font-size: 20px;
 			display: inline-block;
 			vertical-align: middle;
@@ -74,6 +73,25 @@ h1 {
 	}
 
 	.active {
-		background: #303030;
+		background: #1b1b1b;
+
+		& + .submenu {
+			display: block;
+		}
+	}
+}
+
+.submenu {
+	display: none;
+
+	li {
+		border-bottom: 0;
+	}
+
+	a {
+		background: #1b1b1b;
+		font-size: 11px;
+		padding-left: 65px;
+		line-height: 45px;
 	}
 }
