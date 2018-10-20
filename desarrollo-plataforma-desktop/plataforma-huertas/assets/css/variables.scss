@@ -1,7 +1,18 @@
 /* Tipografias */
-$main-font:   Helvetica, sans-serif;
+$primary-font:		'Ebrima', sans-serif;
+$secondary-font:	'Gobold', sans-serif;
+$bold-secondary-font: 'Ebrima-Bold', sans-serif;
 
 /* Colores */
 $white:         #FFFFFF;
 $rdk-grey-lg:   #F3F3F3;
+$rdk-grey-md:   #4b4b4b;
 $rdk-grey-dk:   #262626;
+$rdk-green:		#65bc9c;
+
+$colors: (
+	#7065ab,
+	#dd614e,
+	#65bc9c,
+	#dd964d
+);

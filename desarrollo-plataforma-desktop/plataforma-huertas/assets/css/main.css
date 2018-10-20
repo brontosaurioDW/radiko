@@ -45,6 +45,27 @@ table {
 
 /* Tipografias */
 /* Colores */
+@font-face {
+  font-family: "Gobold";
+  src: url("../fonts/gobold_regular-webfont.eot");
+  src: url("../fonts/gobold_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gobold_regular-webfont.woff2") format("woff2"), url("../fonts/gobold_regular-webfont.woff") format("woff"), url("../fonts/gobold_regular-webfont.svg#goboldregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ebrima-Bold";
+  src: url("../fonts/Ebrima-Bold.eot");
+  src: url("../fonts/Ebrima-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Ebrima-Bold.woff2") format("woff2"), url("../fonts/Ebrima-Bold.woff") format("woff"), url("../fonts/Ebrima-Bold.ttf") format("truetype"), url("../fonts/Ebrima-Bold.svg#Ebrima-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ebrima";
+  src: url("../fonts/Ebrima.eot");
+  src: url("../fonts/Ebrima.eot?#iefix") format("embedded-opentype"), url("../fonts/Ebrima.woff2") format("woff2"), url("../fonts/Ebrima.woff") format("woff"), url("../fonts/Ebrima.ttf") format("truetype"), url("../fonts/Ebrima.svg#Ebrima") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   padding: 0;
   margin: 0;
@@ -53,7 +74,8 @@ table {
 
 body {
   font-size: 14px;
-  font-family: sans-serif;
+  font-family: "Ebrima", sans-serif;
+  color: #4b4b4b;
   background: #F3F3F3;
 }
 
@@ -64,37 +86,72 @@ button {
   transition: 0.3s;
 }
 
+a.basic {
+  font-family: "Ebrima-Bold", sans-serif;
+  color: #65bc9c;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
 h2 {
-  font-size: 38px;
+  font-size: 23px;
+  color: #4b4b4b;
+  text-transform: uppercase;
+  font-family: "Gobold", sans-serif;
   margin-bottom: 20px;
 }
 
 .bold {
-  font-weight: bold;
+  font-family: "Ebrima-Bold", sans-serif;
 }
 
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.flex .col-8 {
+  width: 58%;
+}
+.flex .col-4 {
+  width: 40%;
 }
 
 .dashboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -ms-grid-row-align: flex-start;
+  align-items: flex-start;
+  min-height: 100vh;
 }
 .dashboard .col-left {
   background: #262626;
   width: 20%;
   max-width: 250px;
   padding: 30px;
+  min-height: 100vh;
 }
 .dashboard .col-right {
   background: #F3F3F3;
   width: 80%;
   padding: 30px;
+  min-height: 100vh;
 }
 
 .info-top {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 .info-top ul {
   display: flex;
@@ -103,25 +160,62 @@ h2 {
 .info-top li {
   width: 24%;
   margin: 0 1%;
-  background: red;
-  display: flex;
-  align-items: center;
-  height: 100px;
 }
-.info-top li span span {
+.info-top li span span span {
   display: block;
   font-size: 23px;
 }
+.info-top li:nth-child(4n+1) {
+  background-color: #7065ab;
+}
+.info-top li:nth-child(4n+2) {
+  background-color: #dd614e;
+}
+.info-top li:nth-child(4n+3) {
+  background-color: #65bc9c;
+}
+.info-top li:nth-child(4n+4) {
+  background-color: #dd964d;
+}
 .info-top a {
-  display: block;
+  font-size: 18px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0 20px;
   color: #FFFFFF;
 }
 
 .simple-box {
   background: #FFFFFF;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   padding: 20px;
+  overflow: hidden;
+}
+.simple-box table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.simple-box table td,
+.simple-box table th {
+  padding: 15px 5px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.simple-box table th {
+  font-weight: bold;
+  font-family: "Ebrima-Bold", sans-serif;
+}
+.simple-box table tr td:last-child,
+.simple-box table tr th:last-child {
+  width: 110px;
+}
+.simple-box .basic {
+  float: right;
 }
 
 /*# sourceMappingURL=assets/css/main.css.map */

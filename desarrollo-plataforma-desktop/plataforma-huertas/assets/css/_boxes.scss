@@ -1,5 +1,34 @@
 .simple-box {
 	background: $white;
-	margin-bottom: 25px;
+	margin-bottom: 35px;
 	padding: 20px;
+	overflow: hidden;
+
+	table {
+		width: 100%;
+		margin-bottom: 20px;
+
+		td,
+		th {
+			padding: 15px 5px;
+		    text-align: left;
+		    border-bottom: 1px solid #ddd;
+		}
+
+		th {
+			font-weight: bold;
+			font-family: $bold-secondary-font;
+		}
+
+		tr {
+			td:last-child,
+			th:last-child {
+				width: 110px;
+			}
+		}
+	}
+
+	.basic {
+		float: right;
+	}
 }

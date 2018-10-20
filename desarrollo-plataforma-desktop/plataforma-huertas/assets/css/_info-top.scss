@@ -1,6 +1,6 @@
 .info-top {
 	width: 100%;
-	margin-bottom: 25px;
+	margin-bottom: 40px;
 
 	ul {
 		display: flex;
@@ -10,21 +10,29 @@
 	li {
 		width: 24%;
 		margin: 0 1%;
-		background: red;
-		display: flex;
-		align-items: center;
-		height: 100px;
-
-		span {
+		span span {
 			span {
 				display: block;
 				font-size: 23px;
 			}
 		}
+
+		@for $i from 1 through 4 {
+		    &:nth-child(#{length($colors)}n+#{$i}) {
+		        background-color: nth($colors, $i);
+		    }
+		}
 	}
 
 	a {
-		display: block;
+		font-size: 18px;
+		height: 100px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
 		padding: 0 20px;
 		color: $white;
 	}
