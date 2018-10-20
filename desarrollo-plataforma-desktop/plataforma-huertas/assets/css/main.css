@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -66,6 +67,48 @@ table {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^=icon-],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logout:before {
+  content: "";
+}
+
+.icon-cart:before {
+  content: "";
+}
+
+.icon-fruit:before {
+  content: "";
+}
+
+.icon-user:before {
+  content: "";
+}
+
+.icon-chat:before {
+  content: "";
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -105,6 +148,10 @@ h2 {
 
 .bold {
   font-family: "Ebrima-Bold", sans-serif;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -149,6 +196,63 @@ h2 {
   min-height: 100vh;
 }
 
+.user {
+  color: #F3F3F3;
+  font-size: 15px;
+  line-height: 150%;
+  border-top: 1px solid #424242;
+  margin: 30px -30px 0;
+  padding: 20px 30px;
+}
+.user .user-photo {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user .user-photo img {
+  width: 100%;
+  height: auto;
+}
+.user .user-photo,
+.user .user-info {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.menu {
+  margin: 0 -30px;
+}
+.menu li {
+  border-bottom: 1px solid #424242;
+}
+.menu li:first-child {
+  border-top: 1px solid #424242;
+}
+.menu li i {
+  color: #F3F3F3;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  color: #6d6d6d;
+  fill: #6d6d6d;
+}
+.menu li i + span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.menu a {
+  color: #696969;
+  letter-spacing: 2px;
+  display: block;
+  padding: 0 30px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 55px;
+}
+
 .info-top {
   width: 100%;
   margin-bottom: 40px;
@@ -160,6 +264,17 @@ h2 {
 .info-top li {
   width: 24%;
   margin: 0 1%;
+}
+.info-top li i {
+  font-size: 28px;
+  margin-right: 20px;
+  color: #FFFFFF;
+  fill: #FFFFFF;
+}
+.info-top li i,
+.info-top li i + span {
+  vertical-align: middle;
+  display: inline-block;
 }
 .info-top li span span span {
   display: block;
@@ -175,18 +290,18 @@ h2 {
   background-color: #65bc9c;
 }
 .info-top li:nth-child(4n+4) {
-  background-color: #dd964d;
+  background-color: #f09f4c;
 }
 .info-top a {
   font-size: 18px;
   height: 100px;
+  padding: 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0 20px;
   color: #FFFFFF;
 }
 
