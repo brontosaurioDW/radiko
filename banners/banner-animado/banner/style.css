@@ -5,8 +5,8 @@
 }
 
 .banner-wrapper {
-	background: url('http://www.radiko.com.ar/banner/img/img-minificada-400.jpg') no-repeat right center #ffc773;
-	background-size: 250%;
+	background: url('img/img-minificada-800.jpg') no-repeat right center #ffc773;
+	background-size: cover;
 	margin: 0 auto; 
 	width: 336px;
 	height: 280px;
