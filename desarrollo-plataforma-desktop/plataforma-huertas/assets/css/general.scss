@@ -6,7 +6,8 @@
 
 body {
 	font-size: 14px;
-	font-family: sans-serif;
+	font-family: $primary-font;
+	color: $rdk-grey-md;
 	background: $rdk-grey-lg;
 }
 
@@ -17,20 +18,54 @@ button {
 	transition: .3s;
 }
 
+a.basic {
+	font-family: $bold-secondary-font;
+	color: $rdk-green;
+}
+
+.text-center {
+	text-align: center!important;
+}
+
 h2 {
-	font-size: 38px;	
+	font-size: 23px;	
+	color: $rdk-grey-md;
+	text-transform: uppercase;
+	font-family: $secondary-font;
 	margin-bottom: 20px;
 }
 
 .bold {
-	font-weight: bold;
+	font-family: $bold-secondary-font;
+}
+
+.block {
+	display: block;
 }
 
 .flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+
+	.col-8 {
+		width: 58%;
+	}
+
+	.col-4 {
+		width: 40%;
+	}
 }
 
 .dashboard {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 
 	.col-left {

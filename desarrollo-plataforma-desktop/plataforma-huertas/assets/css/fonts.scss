@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Gobold';
+    src: url('../fonts/gobold_regular-webfont.eot');
+    src: url('../fonts/gobold_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gobold_regular-webfont.woff2') format('woff2'),
+         url('../fonts/gobold_regular-webfont.woff') format('woff'),
+         url('../fonts/gobold_regular-webfont.svg#goboldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Ebrima-Bold';
+    src: url('../fonts/Ebrima-Bold.eot');
+    src: url('../fonts/Ebrima-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Ebrima-Bold.woff2') format('woff2'),
+        url('../fonts/Ebrima-Bold.woff') format('woff'),
+        url('../fonts/Ebrima-Bold.ttf') format('truetype'),
+        url('../fonts/Ebrima-Bold.svg#Ebrima-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ebrima';
+    src: url('../fonts/Ebrima.eot');
+    src: url('../fonts/Ebrima.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Ebrima.woff2') format('woff2'),
+        url('../fonts/Ebrima.woff') format('woff'),
+        url('../fonts/Ebrima.ttf') format('truetype'),
+        url('../fonts/Ebrima.svg#Ebrima') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
