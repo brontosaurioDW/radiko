@@ -1,22 +1,41 @@
 .btn {
   display: inline-block;
-  line-height: 50px;
-  font-size: 14px;
+  line-height: 35px;
+  font-size: 13px;
   text-transform: uppercase;
   color: $white;
   padding: 0 15px;
   border: 0;
   background: $rdk-grey-dk;
+  transition: .3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-lg {
+  font-size: 15px;
+  line-height: 50px;
 }
 
 .btn-primary {
   background: #7065ab;
+  border-bottom: 3px solid #534699;
 }
 
 .btn-secondary {
   background: #dd614e;
+  border-bottom: 3px solid #ab3b2a;
 }
 
 .btn-terciary {
   background: #65bc9c;
+  border-bottom: 3px solid #2f6d56;
+}
+
+.cta-abs {
+  position: absolute;
+  right: 30px;
+  top: 25px;
 }

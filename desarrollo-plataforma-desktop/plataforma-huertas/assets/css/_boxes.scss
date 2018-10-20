@@ -1,18 +1,26 @@
 .simple-box {
 	background: $white;
 	margin-bottom: 35px;
-	padding: 20px;
+	padding: 20px 0 0 0;
 	overflow: hidden;
+
+	&.box-a {
+		padding: 20px;
+	}
 
 	table {
 		width: 100%;
-		margin-bottom: 20px;
 
-		td,
+		td, 
 		th {
-			padding: 15px 5px;
-		    text-align: left;
-		    border-bottom: 1px solid #ddd;
+			padding: 10px 15px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+			transition: .3s;
+		}
+
+		th {
+			padding-top: 0;
 		}
 
 		th {
@@ -21,7 +29,7 @@
 		}
 
 		tr {
-			td:last-child,
+			td:last-child, 
 			th:last-child {
 				text-align: right;
 				width: 20px;
@@ -33,6 +41,42 @@
 					fill: #f09f4c;
 				}
 			}
+
+			&:hover {
+				td,
+				th {
+					background: #f1f1f1;
+				}
+			}
+		}
+	}
+
+	.table-a {
+		margin-bottom: 20px;
+
+		td,
+		th {
+			padding: 15px;
+		}
+	}
+
+	.table-b {
+		tr td:last-child, 
+		tr th:last-child {
+			width: 240px;
+			text-align: left;
+		}
+	}
+
+	.table-c {
+		td,
+		th {
+			padding: 20px 15px;
+		}
+
+		tr td:last-child, 
+		tr th:last-child {
+			width: auto;
 		}
 	}
 

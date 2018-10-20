@@ -149,6 +149,14 @@ h2 {
   margin-bottom: 20px;
 }
 
+h3 {
+  font-size: 20px;
+  color: #4b4b4b;
+  text-transform: uppercase;
+  font-family: "Gobold", sans-serif;
+  margin-bottom: 20px;
+}
+
 .bold {
   font-family: "Ebrima-Bold", sans-serif;
 }
@@ -175,6 +183,13 @@ h2 {
   width: 40%;
 }
 
+.flex-top {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -ms-grid-row-align: flex-start;
+  align-items: flex-start;
+}
+
 .dashboard {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,34 +200,64 @@ h2 {
   width: 20%;
   max-width: 250px;
   padding: 30px;
+  min-height: 100vh;
 }
 .dashboard .col-right {
   background: #F3F3F3;
   width: 80%;
   padding: 30px;
+  min-height: 100vh;
+}
+
+.simple-page .simple-box {
+  margin-top: 25px;
 }
 
 .btn {
   display: inline-block;
-  line-height: 50px;
-  font-size: 14px;
+  line-height: 35px;
+  font-size: 13px;
   text-transform: uppercase;
   color: #FFFFFF;
   padding: 0 15px;
   border: 0;
   background: #262626;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-lg {
+  font-size: 15px;
+  line-height: 50px;
 }
 
 .btn-primary {
   background: #7065ab;
+  border-bottom: 3px solid #534699;
 }
 
 .btn-secondary {
   background: #dd614e;
+  border-bottom: 3px solid #ab3b2a;
 }
 
 .btn-terciary {
   background: #65bc9c;
+  border-bottom: 3px solid #2f6d56;
+}
+
+.cta-abs {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+}
+
+.table-b tr td:last-child,
+.table-b tr th:last-child {
+  width: 240px;
 }
 
 h1 a {
@@ -234,10 +279,8 @@ h1 a {
 }
 .user .user-photo {
   width: 60px;
-  height: 60px;
+  height: auto;
   margin-right: 20px;
-  border-radius: 50%;
-  overflow: hidden;
 }
 .user .user-photo img {
   width: 100%;
@@ -259,7 +302,6 @@ h1 a {
   border-top: 1px solid #424242;
 }
 .menu li i {
-  color: #F3F3F3;
   font-size: 20px;
   display: inline-block;
   vertical-align: middle;
@@ -281,7 +323,23 @@ h1 a {
   line-height: 55px;
 }
 .menu .active {
-  background: #303030;
+  background: #1b1b1b;
+}
+.menu .active + .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+}
+.submenu li {
+  border-bottom: 0;
+}
+.submenu a {
+  background: #1b1b1b;
+  font-size: 11px;
+  padding-left: 65px;
+  line-height: 45px;
 }
 
 .info-top {
@@ -336,21 +394,66 @@ h1 a {
   color: #FFFFFF;
 }
 
+.simple-box.product {
+  margin: 0;
+}
+.simple-box.product h2 {
+  font-size: 30px;
+}
+
+.product-left {
+  width: 50%;
+}
+
+.product-right {
+  width: 49%;
+}
+
+.product-photo img {
+  max-width: 100%;
+  height: 360px;
+}
+
+.product-info {
+  margin-top: 25px;
+}
+.product-info p {
+  line-height: 150%;
+}
+
+.product-bottom {
+  margin-top: 25px;
+}
+
+.stock-ok {
+  color: #65bc9c;
+}
+
+.stock-no {
+  color: #dd614e;
+}
+
 .simple-box {
   background: #FFFFFF;
   margin-bottom: 35px;
-  padding: 20px;
+  padding: 20px 0 0 0;
   overflow: hidden;
+}
+.simple-box.box-a {
+  padding: 20px;
 }
 .simple-box table {
   width: 100%;
-  margin-bottom: 20px;
 }
 .simple-box table td,
 .simple-box table th {
-  padding: 15px 5px;
+  padding: 10px 15px;
   text-align: left;
   border-bottom: 1px solid #ddd;
+  transition: 0.3s;
+}
+.simple-box table th {
+  padding-top: 0;
 }
 .simple-box table th {
   font-weight: bold;
@@ -367,6 +470,30 @@ h1 a {
   font-weight: bold;
   color: #f09f4c;
   fill: #f09f4c;
+}
+.simple-box table tr:hover td,
+.simple-box table tr:hover th {
+  background: #f1f1f1;
+}
+.simple-box .table-a {
+  margin-bottom: 20px;
+}
+.simple-box .table-a td,
+.simple-box .table-a th {
+  padding: 15px;
+}
+.simple-box .table-b tr td:last-child,
+.simple-box .table-b tr th:last-child {
+  width: 240px;
+  text-align: left;
+}
+.simple-box .table-c td,
+.simple-box .table-c th {
+  padding: 20px 15px;
+}
+.simple-box .table-c tr td:last-child,
+.simple-box .table-c tr th:last-child {
+  width: auto;
 }
 .simple-box .basic {
   float: right;

@@ -35,6 +35,14 @@ h2 {
 	margin-bottom: 20px;
 }
 
+h3 {
+	font-size: 20px;	
+	color: $rdk-grey-md;
+	text-transform: uppercase;
+	font-family: $secondary-font;
+	margin-bottom: 20px;
+}
+
 .bold {
 	font-family: $bold-secondary-font;
 }
@@ -63,6 +71,13 @@ h2 {
 	}
 }
 
+.flex-top {
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	-ms-grid-row-align: flex-start;
+	align-items: flex-start;
+}
+
 .dashboard {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -73,12 +88,19 @@ h2 {
 		width: 20%;
 		max-width: 250px;
 		padding: 30px;
+		min-height: 100vh;
 	}
 
 	.col-right {
 		background: $rdk-grey-lg;
 		width: 80%;
 		padding: 30px;
+		min-height: 100vh;
 	}
 }
 
+.simple-page {
+	.simple-box {
+		margin-top: 25px;
+	}
+}
