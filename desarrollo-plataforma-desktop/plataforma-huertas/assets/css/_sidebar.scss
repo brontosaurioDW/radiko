@@ -19,10 +19,8 @@ h1 {
 
 	.user-photo {
 		width: 60px;
-		height: 60px;
+		height: auto;
 		margin-right: 20px;
-		border-radius: 50%;
-		overflow: hidden;
 
 		img {
 			width: 100%;

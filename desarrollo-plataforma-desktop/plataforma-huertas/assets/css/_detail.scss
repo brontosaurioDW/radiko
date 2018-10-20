@@ -1,0 +1,42 @@
+.simple-box.product {
+	margin: 0;
+
+	h2 {
+		font-size: 30px;
+	}
+}
+
+.product-left {
+	width: 50%;
+}
+
+.product-right {
+	width: 49%;
+}
+
+.product-photo {
+	img {
+		max-width: 100%;
+		height: 360px;
+	}
+}
+
+.product-info {
+	margin-top: 25px;
+
+	p {
+		line-height: 150%;
+	}
+}
+
+.product-bottom {
+	margin-top: 25px;
+}
+
+.stock-ok {
+	color: $rdk-green;
+}
+
+.stock-no {
+	color: $rdk-red;
+}

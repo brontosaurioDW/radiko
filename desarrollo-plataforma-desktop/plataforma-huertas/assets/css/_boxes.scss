@@ -43,7 +43,8 @@
 			}
 
 			&:hover {
-				td {
+				td,
+				th {
 					background: #f1f1f1;
 				}
 			}
@@ -64,6 +65,18 @@
 		tr th:last-child {
 			width: 240px;
 			text-align: left;
+		}
+	}
+
+	.table-c {
+		td,
+		th {
+			padding: 20px 15px;
+		}
+
+		tr td:last-child, 
+		tr th:last-child {
+			width: auto;
 		}
 	}
 
