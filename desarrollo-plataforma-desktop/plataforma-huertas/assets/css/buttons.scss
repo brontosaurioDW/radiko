@@ -1,0 +1,22 @@
+.btn {
+  display: inline-block;
+  line-height: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $white;
+  padding: 0 15px;
+  border: 0;
+  background: $rdk-grey-dk;
+}
+
+.btn-primary {
+  background: #7065ab;
+}
+
+.btn-secondary {
+  background: #dd614e;
+}
+
+.btn-terciary {
+  background: #65bc9c;
+}
