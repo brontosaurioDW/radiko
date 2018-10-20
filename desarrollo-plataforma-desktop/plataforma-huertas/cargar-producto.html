@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<title>
+		Cargar producto
+	</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+	<div class="dashboard">
+		<div class="col-left">
+			<h1>
+				<a href="index.html">Radiko</a>
+			</h1>
+
+			<div class="user">
+				<div class="user-photo">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHdGlkKbVAKyIZ4nqEDssi0DZLKLCVi1m4KD92sPs8lC95-OUYBg" alt="Huerta" />
+				</div>
+				<div class="user-info">
+					<span class="block bold">Hola Juan!</span>
+					<span>La huerta orgánica</span>
+				</div>
+			</div>
+
+			<ul class="menu">
+				<li>
+					<a href="listado-productos.html" class="active">
+						<i class="icon icon-fruit"></i>
+						<span>Mis productos</span>
+					</a>
+					<ul class="submenu">
+						<li>
+							<a href="cargar-producto.html">
+								<i class="icon">+</i>
+								<span>Agregar producto</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icon-cart"></i>
+						<span>Mis pedidos</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icon-user"></i>
+						<span>Mis datos</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icon-chat"></i>
+						<span>Chat</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icon-logout"></i>
+						<span>Cerrar sesión</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="col-right">
+			<div class="simple-page">
+				<h2>Nuevo producto</h2>
+				<p>Completa los siguientes datos para cargar un nuevo producto de tu huerta</p>
+				
+				<form method="" action="" class="form">
+					<div class="form-row">
+						<div class="wrap-input">
+							<label class="label-input">Nombre del producto <span class="red bold">*</span></label>
+							<input class="input" type="text" name="nombre-producto" placeholder="Escribe el nombre del producto">
+						</div>
+
+						<div class="wrap-input">
+							<label class="label-input">Precio <span class="red bold">*</span></label>
+							<input class="input" type="text" name="precio-producto" placeholder="¿Cuánto sale?">
+						</div>
+
+						<div class="wrap-input">
+							<label class="label-input">Categoría <span class="red bold">*</span></label>
+							<div class="custom-select">
+								<select class="select" name="categoria-producto">
+									<option value="" selected="">Selecciona una categoría</option>
+									<option value="">Frutas</option>
+									<option value="">Verduras</option>
+									<option value="">Lácteos</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="wrap-input">
+							<label class="label-input">Marca <span class="red bold">*</span></label>
+							<input class="input" type="text" name="marca-producto" placeholder="Agrega la marca">
+						</div>
+
+						<div class="flex">
+							<div class="wrap-input half-input">
+								<label class="label-input">Stock <span class="red bold">*</span></label>
+								<input class="input" type="text" name="stock-producto" placeholder="¿Cuántos quedan?">
+							</div>
+
+							<div class="wrap-input half-input">
+								<label class="label-input">Unidad de medida <span class="red bold">*</span></label>
+								<div class="custom-select">
+									<select class="select" name="unidad-medida">
+										<option value="" selected="">Elige la unidad para el producto</option>
+										<option value="">Kilogramo</option>
+										<option value="">Unidades</option>
+										<option value="">Litros</option>
+									</select>
+								</div>
+							</div>							
+						</div>
+
+						<div class="wrap-input">
+							<label class="label-input">Descripción <span class="red bold">*</span></label>
+							<textarea class="textarea" name="nombre-producto" cols="15" rows="5" placeholder="Agrega una descripción del producto"></textarea>
+						</div>
+
+						<div class="text-right">
+							<button class="btn btn-primary btn-lg">Agregar</button>
+						</div>
+					</div>
+				</form>		
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/selects.js"></script>
+</body>
+</html>

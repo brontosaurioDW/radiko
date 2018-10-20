@@ -41,13 +41,6 @@
 					fill: #f09f4c;
 				}
 			}
-
-			&:hover {
-				td,
-				th {
-					background: #f1f1f1;
-				}
-			}
 		}
 	}
 
@@ -63,7 +56,7 @@
 	.table-b {
 		tr td:last-child, 
 		tr th:last-child {
-			width: 240px;
+			width: 260px;
 			text-align: left;
 		}
 	}

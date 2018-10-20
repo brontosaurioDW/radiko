@@ -1,0 +1,120 @@
+.form {
+    margin-top: 25px;
+
+    label {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+
+    .wrap-input {
+        width: 100%;
+        position: relative;
+        border: 1px solid #ddd;
+        background: $white;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .input,
+    .select,
+    .textarea {
+        width: 100%;
+        background: transparent;
+        font-size: 18px;
+        color: #7e7e7e;
+        border: 0;        
+        outline: none;
+        margin-top: 15px;
+    }
+
+    .half-input {
+        width: 49%;
+    }
+
+    ::-webkit-input-placeholder {
+      color: #7e7e7e;
+    }
+
+    ::-moz-placeholder {
+      color: #7e7e7e;
+    }
+
+    :-ms-input-placeholder {
+      color: #7e7e7e;
+    }
+
+    :-moz-placeholder {
+      color: #7e7e7e;
+    }
+
+}
+
+.custom-select {
+    position: relative;
+    cursor: pointer;
+
+    select {
+        display: none; 
+    }
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-color: #8c8c8c transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+.select-items {
+    -webkit-box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.26);
+    box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.26);
+}
+
+.select-items div, 
+.select-selected {
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-size: 18px;
+    color: #7e7e7e;
+    border: 0;
+    outline: none;
+    margin-top: 15px;
+}
+
+.select-items div {
+    padding: 15px;
+    margin: 0;
+}
+
+.select-items {
+    position: absolute;
+    background-color: $white;
+    top: 100%;
+    left: -16px;
+    right: -16px;
+    z-index: 99;
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    border-top: 0;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, 
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
