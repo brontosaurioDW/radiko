@@ -67,25 +67,18 @@ h2 {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: start;
-	-ms-flex-align: start;
-	-ms-grid-row-align: flex-start;
-	align-items: flex-start;
-	min-height: 100vh;
 
 	.col-left {
 		background: $rdk-grey-dk;
 		width: 20%;
 		max-width: 250px;
 		padding: 30px;
-		min-height: 100vh;
 	}
 
 	.col-right {
 		background: $rdk-grey-lg;
 		width: 80%;
 		padding: 30px;
-		min-height: 100vh;
 	}
 }
 
