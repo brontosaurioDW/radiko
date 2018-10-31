@@ -23,9 +23,9 @@ dev
 	|_ tablet --> Estilos especificos para tablet
 	|_ general.less --> Acá van estilos generales (Colores, tipografias, cosas que se repiten mucho, etc)
 	|_ grid-base.less --> Acá armamos la grilla de productos / huertas (ver clases ya agregadas)
-	|_ main.les --> Acá incluir todos los archivos css (Ver el ejemplo que ya esta incluido)
+	|_ main.less --> Acá incluir todos los archivos css (Ver el ejemplo que ya esta incluido)
    |_ images
-   |_ js  -> Todos los archivos de js que creemos aca, despues se compilan en dist/js/main.js (ojo con el orden de las cosas nomas)
+   |_ js  --> Todos los archivos de js que creamos acá despues se compilan en dist/js/main.js (ojo con el orden de las cosas nomas)
    |_ sprites --> por ahora aca no hacemos nada
    |_ vendor 
  	|_ css --> Acá van los css de los plugins (despues se compila en dist/css/vendor.css)
