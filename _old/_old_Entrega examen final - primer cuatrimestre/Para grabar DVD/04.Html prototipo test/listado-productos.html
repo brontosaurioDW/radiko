@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Radiko - Resultados</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="dist/css/vendor.css">
+		<link rel="stylesheet" type="text/css" href="dist/css/main.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</head>
+	<body>
+		<header class="huerta-detalle">
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<div class="container">
+					<h1><a class="navbar-brand" href="index.html">Rádiko</a></h1>
+					
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#radiko-navbar" aria-controls="radiko-navbar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-end" id="radiko-navbar">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="listado-huertas.html">Huertas</a>
+							</li>
+<!--
+							<li class="nav-item">
+								<a class="nav-link" href="listado-productos.html">Productos</a>
+							</li>
+							-->
+							<li class="nav-item">
+								<a class="nav-link" href="login.html">Ingresá</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="registro.html">Registrate</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="confirmacion-paso-1.html" data-toggle="tooltip" data-placement="right" title="Tooltip on top">
+									<i class="fas fa-shopping-cart"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main class="huerta-content mt-5">
+			
+			<section class="huerta-options">
+				<div class="container">
+					<div class="row listado-productos">
+						<div class="col-12 col-md-9">
+							<div class="huerta-productos">
+								<div class="row">
+									<div class="col-12 col-md-4">
+										<div class="form-group">
+											<label for="filtros" class="sr-only">Filtros</label>
+											<select class="form-control" id="filtros">
+												<option>Mejores puntuados</option>
+												<option>Más valorados</option>
+												<option>De mayor a menor</option>
+												<option>De menor a mayor</option>
+												<option>Los más nuevos</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 offset-md-4">
+										<form class="huerta-form-buscar">
+											<div class="row-search form-row justify-content-right relative huerta-buscar">
+												<input type="text" name="search" placeholder="¿Qué estás buscando?">
+												<button class="btn-search">
+												<span class="sr-only">Search</span>
+												<i class="fas fa-search"></i>
+												</button>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12 col-sm-6 col-md-4">
+										<div class="card">
+											<a data-toggle="modal" data-target="#producto-detalle">
+												<img class="card-img-top" src="dist/images/p-1.jpg" alt="Card image cap">
+												<div class="stars">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="far fa-star"></i>
+													<i class="far fa-star"></i>
+												</div>
+											</a>
+											<div class="card-body">
+												<div class="title text-left">
+													<h4 class="card-title huerta"><a href="detalle-huerta.html">Tallo Verde</a></h4>
+												</div>
+												<div class="subtitle">
+													<h5 class="card-title producto">Tomate</h5>
+												</div>
+												<p><span class="producto-precio">$40</span> x kg.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4">
+										<div class="card">
+											<a data-toggle="modal" data-target="#producto-detalle">
+												<img class="card-img-top" src="dist/images/p-2.jpg" alt="Card image cap">
+												<div class="stars">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="far fa-star"></i>
+													<i class="far fa-star"></i>
+												</div>
+											</a>
+											<div class="card-body">
+												<div class="title text-left">
+													<h4 class="card-title huerta"><a href="detalle-huerta.html">Tallo Orgánico</a></h4>
+												</div>
+												<div class="subtitle">
+													<h5 class="card-title producto">Lechuga</h5>
+												</div>
+												<p><span class="producto-precio">$60</span> x kg.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4">
+										<div class="card">
+											<a data-toggle="modal" data-target="#producto-detalle">
+												<img class="card-img-top" src="dist/images/p-3.jpg" alt="Card image cap">
+												<div class="stars">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="far fa-star"></i>
+													<i class="far fa-star"></i>
+												</div>
+											</a>
+											<div class="card-body">
+												<div class="title text-left">
+													<h4 class="card-title huerta"><a href="detalle-huerta.html">El bolsón</a></h4>
+												</div>
+												<div class="subtitle">
+													<h5 class="card-title producto">Morrón Amarillo</h5>
+												</div>
+												<p><span class="producto-precio">$70</span> x kg.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4">
+										<div class="card">
+											<a data-toggle="modal" data-target="#producto-detalle">
+												<img class="card-img-top" src="dist/images/p-4.jpg" alt="Card image cap">
+												<div class="stars">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="far fa-star"></i>
+													<i class="far fa-star"></i>
+												</div>
+											</a>
+											<div class="card-body">
+												<div class="title text-left">
+													<h4 class="card-title huerta"><a href="detalle-huerta.html">El jardín</a></h4>
+												</div>
+												<div class="subtitle">
+													<h5 class="card-title producto">Zanahoria</h5>
+												</div>
+												<p><span class="producto-precio">$30</span> x kg.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4">
+										<div class="card">
+											<a data-toggle="modal" data-target="#producto-detalle">
+												<img class="card-img-top" src="dist/images/p-5.jpg" alt="Card image cap">
+												<div class="stars">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="far fa-star"></i>
+													<i class="far fa-star"></i>
+												</div>
+											</a>
+											<div class="card-body">
+												<div class="title text-left">
+													<h4 class="card-title huerta"><a href="detalle-huerta.html">La huerta</a></h4>
+												</div>
+												<div class="subtitle">
+													<h5 class="card-title producto">Naranja</h5>
+												</div>
+												<p><span class="producto-precio">$40</span> x kg.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4">
+										<div class="card">
+											<a data-toggle="modal" data-target="#producto-detalle">
+												<img class="card-img-top" src="dist/images/p-6.jpg" alt="Card image cap">
+												<div class="stars">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="far fa-star"></i>
+													<i class="far fa-star"></i>
+												</div>
+											</a>
+											<div class="card-body">
+												<div class="title text-left">
+													<h4 class="card-title huerta"><a href="detalle-huerta.html">Y acá otra huerta</a></h4>
+												</div>
+												<div class="subtitle">
+													<h5 class="card-title producto">Frutilla</h5>
+												</div>
+												<p><span class="producto-precio">$90</span> x kg.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4">
+										<div class="card">
+											<a data-toggle="modal" data-target="#producto-detalle">
+												<img class="card-img-top" src="dist/images/p-7.jpg" alt="Card image cap">
+												<div class="stars">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="far fa-star"></i>
+													<i class="far fa-star"></i>
+												</div>
+											</a>
+											<div class="card-body">
+												<div class="title text-left">
+													<h4 class="card-title huerta"><a href="detalle-huerta.html">Tallo Orgánico</a></h4>
+												</div>
+												<div class="subtitle">
+													<h5 class="card-title producto">Palta</h5>
+												</div>
+												<p><span class="producto-precio">$30</span> x un.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4">
+										<div class="card">
+											<a data-toggle="modal" data-target="#producto-detalle">
+												<img class="card-img-top" src="dist/images/p-8.jpg" alt="Card image cap">
+												<div class="stars">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="far fa-star"></i>
+													<i class="far fa-star"></i>
+												</div>
+											</a>
+											<div class="card-body">
+												<div class="title text-left">
+													<h4 class="card-title huerta"><a href="detalle-huerta.html">Una con título más largo</a></h4>
+												</div>
+												<div class="subtitle">
+													<h5 class="card-title producto">Pepino</h5>
+												</div>
+												<p><span class="producto-precio">$40</span> x kg.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4">
+										<div class="card">
+											<a data-toggle="modal" data-target="#producto-detalle">
+												<img class="card-img-top" src="dist/images/p-9.jpg" alt="Card image cap">
+												<div class="stars">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="far fa-star"></i>
+													<i class="far fa-star"></i>
+												</div>
+											</a>
+											<div class="card-body">
+												<div class="title text-left">
+													<h4 class="card-title huerta"><a href="detalle-huerta.html">Tallo Orgánico</a></h4>
+												</div>
+												<div class="subtitle">
+													<h5 class="card-title producto">Ajo</h5>
+												</div>
+												<p><span class="producto-precio">$20</span> x un.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<nav aria-label="navigation" class="huerta-navigation">
+										<ul class="pagination justify-content-center">
+											<li class="page-item"><a class="page-link" href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-3">
+							<div class="huerta-list">
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item list-title">Categoría</li>
+									<li class="list-group-item">
+										<label for="valor-1">
+											<span class="checkbox">
+												<input type="checkbox" name="valor-1" id="valor-1">
+												<span>Valor 1</span>
+											</span>
+										</label>
+									</li>
+									<li class="list-group-item">
+										<label for="valor-2">
+											<span class="checkbox">
+												<input type="checkbox" name="valor-2" id="valor-2">
+												<span>Valor 2</span>
+											</span>
+										</label>
+									</li>
+									<li class="list-group-item">
+										<label for="valor-3">
+											<span class="checkbox">
+												<input type="checkbox" name="valor-3" id="valor-3">
+												<span>Valor 3</span>
+											</span>
+										</label>
+									</li>
+								</ul>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item list-title">Categoría</li>
+									<li class="list-group-item">
+										<label for="valor-4">
+											<span class="checkbox">
+												<input type="checkbox" name="valor-4" id="valor-4">
+												<span>Valor 4</span>
+											</span>
+										</label>
+									</li>
+									<li class="list-group-item">
+										<label for="valor-5">
+											<span class="checkbox">
+												<input type="checkbox" name="valor-5" id="valor-5">
+												<span>Valor 5</span>
+											</span>
+										</label>
+									</li>
+									<li class="list-group-item">
+										<label for="valor-6">
+											<span class="checkbox">
+												<input type="checkbox" name="valor-6" id="valor-6">
+												<span>Valor 6</span>
+											</span>
+										</label>
+									</li>
+								</ul>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item list-title">Categoría</li>
+									<li class="list-group-item">
+										<label for="valor-7">
+											<span class="checkbox">
+												<input type="checkbox" name="valor-7" id="valor-7">
+												<span>Valor 7</span>
+											</span>
+										</label>
+									</li>
+									<li class="list-group-item">
+										<label for="valor-8">
+											<span class="checkbox">
+												<input type="checkbox" name="valor-8" id="valor-8">
+												<span>Valor 8</span>
+											</span>
+										</label>
+									</li>
+									<li class="list-group-item">
+										<label for="valor-9">
+											<span class="checkbox">
+												<input type="checkbox" name="valor-9" id="valor-9">
+												<span>Valor 9</span>
+											</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			
+			<!-- Modal -->
+			<div class="modal fade" id="producto-detalle" tabindex="-1" role="dialog" aria-labelledby="producto-detalle" aria-hidden="true">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content block">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body modal-producto">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-6">
+										<img class="img-fluid mb-3" src="dist/images/p-1.jpg" alt="tomates">
+									</div>
+									<div class="col-md-6">
+										<div>
+											<h3 class="producto-title">Tomate</h3>
+										</div>
+										<div>
+											<h4 class="producto-title huerta"><a href="detalle-huerta.html">Tallo Verde</a></h4>
+										</div>
+										<p class="producto-precio"><span>$40</span> x kg.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut error officia placeat illo alias cum minima dignissimos accusantium earum incidunt.</p>
+										
+										<form>
+											<div class="form-group row">
+												<label for="cantidad" class="col-12 col-lg-3 col-form-label">Cantidad</label>
+												<div class="col-12 col-lg-9">
+													<select class=" form-control custom-select mr-sm-2" id="cantidad">
+														<option selected>Elegir...</option>
+														<option value="1">1 kg</option>
+														<option value="2">2 kg</option>
+														<option value="3">3 kg</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group row">
+												<div class="col-12">
+													<a href="confirmacion-paso-1.html" class="btn btn-terciary btn-small">Comprar</a>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<a href="#" class="logo-foo"> Rádiko </a>
+						<p> Tu nuevo super </p>
+					</div>
+					<div class="col-md-3">
+						<ul>
+							<li>
+								<a href="#">Preguntas frecuentes</a>
+							</li>
+							<li>
+								<a href="#">Legales</a>
+							</li>
+							<li>
+								<a href="#">Términos y condiciones</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul>
+							<li>
+								<a href="#">Contacto</a>
+							</li>
+							<li>
+								<a href="#">Tengo una huerta</a>
+							</li>
+							<li>
+								<a href="#">Otro link</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<div class="download-btn">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="dist/images/google-play-btn.png" alt="Download in Google Play" class="img-fluid">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="dist/images/app-store-btn.png" alt="Download in App Store" class="img-fluid">
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="social">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fab fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="dist/js/vendor.js"></script>
+		<script src="dist/js/main.js"></script>
+	</body>
+</html>
