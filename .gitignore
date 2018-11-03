@@ -3,3 +3,8 @@
 /_old/_old_landing/.idea/
 /_old/html-web-cliente-desktop/node_modules/
 /_old/html-plataforma-huerta-desktop/node_modules/
+
+/dev-html/html-web-cliente-desktop/node_modules/
+dev-html/html-web-cliente-desktop/node_modules/
+/dev-html/html-plataforma-huerta-desktop/node_modules/
+dev-html/html-plataforma-huerta-desktop/node_modules/

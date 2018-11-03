@@ -1,0 +1,51 @@
+@import url('variables.less');
+
+.section {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid @grey-lg;
+}
+
+.color-column {
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.color {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+
+    & + p {
+   		display: inline-block;
+    	vertical-align: middle;
+    	width: 100%;
+		padding-left: 70px;
+		margin-left: -55px;
+		margin-bottom: 0;
+    }
+}
+
+h2,
+h3,
+h4,
+.link {
+	margin-bottom: 2rem;
+}
+
+
+@media screen and (min-width: 768px) {
+	.color-column {
+	    width: 33%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.color-column {
+	    width: 20%;
+	}
+}

@@ -12,6 +12,11 @@ module.exports = function(grunt) {
                 files: {
                     'dist/css/main.css': 'dev/css/main.less'
                 }
+            },
+            styleguide: {
+                files: {
+                    'dist/css/styleguide.css': 'dev/css/_styleguide.less'
+                }
             }
         },
         autoprefixer: {
