@@ -25,9 +25,31 @@
 	font-weight: 500;
 	padding: 0 15px;
 	letter-spacing: 1px;
+
+	&:focus {
+		box-shadow: none;
+	}
 }
 
 .btn-primary {
+	background-color: @pepper;
+	border-bottom: 3px solid @pepper-dk;
+
+	&:hover,
+	&.active,
+	&:focus {
+		background-color: @pepper;
+		border-bottom: 3px solid @pepper-dk;
+	}
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, 
+.btn-primary:not(:disabled):not(.disabled).active, 
+.show > .btn-primary.dropdown-toggle,
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+	box-shadow: none;
 	background-color: @pepper;
 	border-bottom: 3px solid @pepper-dk;
 }
@@ -35,11 +57,36 @@
 .btn-secondary {
 	background-color: @tomato;
 	border-bottom: 3px solid @tomato-dk;
+
+	&:hover,
+	&.active,
+	&:focus {
+		background-color: @tomato;
+		border-bottom: 3px solid @tomato-dk;	
+	}
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, 
+.btn-secondary:not(:disabled):not(.disabled).active, 
+.show > .btn-secondary.dropdown-toggle,
+.btn-secondary:not(:disabled):not(.disabled):active:focus, 
+.btn-secondary:not(:disabled):not(.disabled).active:focus, 
+.show > .btn-secondary.dropdown-toggle:focus {
+	box-shadow: none;
+	background-color: @tomato;
+	border-bottom: 3px solid @tomato-dk;	
 }
 
 .btn-terciary {
 	background-color: @grape;
 	border-bottom: 3px solid @grape-dk;
+
+	&:hover,
+	&.active,
+	&:focus {
+		background-color: @grape;
+		border-bottom: 3px solid @grape-dk;
+	}
 }
 
 .btn-small {
