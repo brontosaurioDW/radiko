@@ -1,0 +1,114 @@
+.form {
+	label {
+		font-size: @x-regular;
+		font-weight: 600;
+		display: block;
+		min-height: 27px;
+		margin-bottom: 10px;
+	}
+
+	.row-form {
+		margin-bottom: 25px;
+	}
+
+	.split {
+		.sm-input {
+		    width: 30%;
+		}
+
+		.lg-input {
+		    width: 65%;
+		}
+	}
+
+	input[type="text"],
+	input[type="password"],
+	select,
+	textarea {
+		background: @ice;
+		font-size: @regular;
+		display: block;
+		width: 100%;
+		border: 0;
+		border-bottom: 3px solid @grey-md;
+		line-height: 48px;
+		height: 48px;
+		padding: 0;
+		outline: none;
+	}
+
+	textarea {
+		resize: none;
+		height: 105px;
+	}
+}
+
+.form-bg {
+	background: @grey-lg;
+	padding: 1.5rem;
+
+	input[type="text"],
+	input[type="password"],
+	select,
+	textarea {
+		padding: 0 15px;
+	}
+}
+
+.checkbox.checkbox {
+	font-size: @regular;
+	line-height: 29px;
+	padding-left: 40px;
+	font-weight: normal;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	min-height: unset;
+	margin: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+
+	.checkmark {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 27px;
+	    width: 27px;	
+		background-color: @ice;
+		border: 1px solid @grey-md;
+	}
+
+	input:checked ~ .checkmark {
+		background-color: @grape;
+	}
+
+	.checkmark:after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+
+	input:checked ~ .checkmark:after {
+		display: block;
+	}
+
+	.checkmark:after {
+		content: '\f00c';
+		color: @ice;
+		font-family: 'Font Awesome 5 Pro';
+		font-size: @x-regular;
+		font-weight: 400;
+		text-align: center;
+		width: 100%;
+	}
+}

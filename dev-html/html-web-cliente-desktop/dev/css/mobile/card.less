@@ -61,6 +61,28 @@
 			right: 0;
 			bottom: 0;
 		}
+
+		.select-wrapper {
+			margin-right: 15px;
+
+			select {
+				padding: 0 15px;
+				min-width: 100px;
+			}
+
+			& + span {
+				font-size: @small * 2;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	.remove  {
+		position: absolute;
+		right: 25px;
+		top: 25px;
+		font-size: @x-regular;
 	}
 
 	.categoria {
@@ -72,5 +94,31 @@
 	.precio {
 		font-size: @large;
 		font-weight: 200;
+	}
+
+	.btn {
+		position: absolute;
+		right: 25px;
+		top: 25px;
+	}
+}
+
+
+.card.listado {
+	ul {
+		margin: 0 0 40px 0;
+
+		li {
+			margin: 20px 0;
+			font-size: @x-regular;
+		}
+
+		li:first-child {
+			margin-top: 0;
+		}
+	}
+
+	.sub-total {
+		font-size: @regular * 2;
 	}
 }

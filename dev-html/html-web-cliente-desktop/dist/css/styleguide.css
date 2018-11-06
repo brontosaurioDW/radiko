@@ -50,6 +50,9 @@ h4,
 .card {
   margin-bottom: 1.5rem;
 }
+.nav-tabs {
+  margin-bottom: 55px;
+}
 @media screen and (min-width: 768px) {
   .color-column {
     width: 33%;
