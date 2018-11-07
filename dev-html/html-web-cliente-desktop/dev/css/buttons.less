@@ -2,4 +2,107 @@
 	color: @charcoal;
 	font-weight: 600;
 	display: inline-block;
+
+	i[class*="left"] {
+		margin-right: 10px;
+	}
+
+	i[class*="right"] {
+		margin-left: 10px;
+	}
+
+	&:hover {
+		color: @charcoal;
+		text-decoration: none;
+	}
+}
+
+.btn {
+	color: @ice;
+	border-radius: 0;
+	border: 0;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 0 15px;
+	letter-spacing: 1px;
+
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+.btn-primary {
+	background-color: @pepper;
+	border-bottom: 3px solid @pepper-dk;
+
+	&:hover,
+	&.active,
+	&:focus {
+		background-color: @pepper;
+		border-bottom: 3px solid @pepper-dk;
+	}
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, 
+.btn-primary:not(:disabled):not(.disabled).active, 
+.show > .btn-primary.dropdown-toggle,
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+	box-shadow: none;
+	background-color: @pepper;
+	border-bottom: 3px solid @pepper-dk;
+}
+
+.btn-secondary {
+	background-color: @tomato;
+	border-bottom: 3px solid @tomato-dk;
+
+	&:hover,
+	&.active,
+	&:focus {
+		background-color: @tomato;
+		border-bottom: 3px solid @tomato-dk;	
+	}
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, 
+.btn-secondary:not(:disabled):not(.disabled).active, 
+.show > .btn-secondary.dropdown-toggle,
+.btn-secondary:not(:disabled):not(.disabled):active:focus, 
+.btn-secondary:not(:disabled):not(.disabled).active:focus, 
+.show > .btn-secondary.dropdown-toggle:focus {
+	box-shadow: none;
+	background-color: @tomato;
+	border-bottom: 3px solid @tomato-dk;	
+}
+
+.btn-terciary {
+	background-color: @grape;
+	border-bottom: 3px solid @grape-dk;
+
+	&:hover,
+	&.active,
+	&:focus {
+		background-color: @grape;
+		border-bottom: 3px solid @grape-dk;
+	}
+}
+
+.btn-small {
+	line-height: 45px;
+	height: 45px;
+	font-size: @small;
+}
+
+.btn-medium {
+	line-height: 50px;
+	height: 50px;
+	font-size: @regular;
+}
+
+.btn-large {
+	line-height: 60px;
+	height: 60px;
+	font-size: @regular;
 }

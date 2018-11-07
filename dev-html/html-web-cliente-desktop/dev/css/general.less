@@ -4,3 +4,27 @@ body {
 	color: @charcoal;
 	font-family: @primary-font;
 }
+
+a,
+button {
+	transition: 0.3s;
+
+	&:hover {
+		outline: none;
+		text-decoration: none;
+		opacity: 0.95;
+	}
+}
+
+.no-border {
+	border: 0!important;
+}
+
+/*  Estrellitas para las reviews   */
+
+.stars {
+	i {
+		font-size: @x-small - 1;
+		margin-right: 3px;
+	}
+}

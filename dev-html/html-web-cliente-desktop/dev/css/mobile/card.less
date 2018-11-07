@@ -1,0 +1,124 @@
+.card {
+	border: 0;
+	border-bottom: 3px solid @charcoal-lg;
+	border-radius: 0;
+
+	& > a,
+	& > div {
+		background: @grey-lg;
+		color: @charcoal;
+	}
+
+	.img-wrapper {
+	    width: 38%;
+	    max-width: 240px;
+	    overflow: hidden;
+	}
+
+	img {
+		height: 190px;
+		width: auto;
+	}
+
+	.card-info {
+		border-left: 15px solid @grape;
+		width: 62%;
+		padding: 1.5rem;		
+		position: relative;
+
+		&.dark-border {
+			border-left-color: @charcoal;
+		}
+	}
+
+	.envio {
+		display: block;
+		margin-top: 10px;
+		color: @charcoal-lg;
+
+		i {
+			margin-right: 10px;
+		}
+	}
+
+	h3 {
+		font-size: @x-regular;
+		font-weight: 700;
+		margin: 0;
+	}
+	
+	.more-info {
+		position: absolute;
+		left: 1.5rem;
+		right: 1.5rem;
+		bottom: 1.5rem;
+		line-height: 150%;
+
+		i {
+			color: @grape;
+			font-size: @large + 2;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+
+		.select-wrapper {
+			margin-right: 15px;
+
+			select {
+				padding: 0 15px;
+				min-width: 100px;
+			}
+
+			& + span {
+				font-size: @small * 2;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	.remove  {
+		position: absolute;
+		right: 25px;
+		top: 25px;
+		font-size: @x-regular;
+	}
+
+	.categoria {
+		text-transform: uppercase;
+		font-size: @x-regular - 1;
+		color: @pepper;
+	}
+
+	.precio {
+		font-size: @large;
+		font-weight: 200;
+	}
+
+	.btn {
+		position: absolute;
+		right: 25px;
+		top: 25px;
+	}
+}
+
+
+.card.listado {
+	ul {
+		margin: 0 0 40px 0;
+
+		li {
+			margin: 20px 0;
+			font-size: @x-regular;
+		}
+
+		li:first-child {
+			margin-top: 0;
+		}
+	}
+
+	.sub-total {
+		font-size: @regular * 2;
+	}
+}
