@@ -1,0 +1,48 @@
+@media screen and (min-width: 992px) { 
+
+	header {
+
+		h1 a.navbar-brand {
+		    width: 105px;
+		    height: 53px;
+		}
+
+		&:not(.is-home) + main {
+			.main-wrapper {
+				padding-top: 150px;
+			}
+		}
+	}
+
+	.navbar {
+		padding: 0;
+
+		ul {
+
+			li {
+				margin-left: 2.5rem;
+			}
+		}
+	}
+
+	.navbar-nav {
+		.dropdown-menu {
+			position: absolute;
+			background: transparent;
+			border: 0;
+			padding: 15px;
+			background: @tomato-dk;
+			border-radius: 0;
+			margin-top: 29px;
+
+			a {
+				font-size: @small;
+				padding: 0;
+			}
+
+			a:first-of-type {
+				padding-bottom: 15px;
+			}
+		}
+	}
+}

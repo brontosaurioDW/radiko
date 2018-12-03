@@ -1,0 +1,70 @@
+.auth {
+	min-height: 100vh;
+
+	.msg-alert {
+		margin-bottom: 15px;
+	}
+
+	.logo {
+		background: url(../images/logo.png) no-repeat center center transparent;
+		display: block;
+		width: 120px;
+		height: 55px;
+		margin: 0;
+		background-size: 100%;
+		font-size: 0;
+		color: transparent;
+		padding: 0;
+	}
+
+	.info {
+		min-height: 40vh;
+		background-size: 100%;
+		width: 100vw;
+		margin: 0 -15px;
+		position: relative;
+
+		.link {
+			position: absolute;
+			top: 15px;
+			left: 15px;
+			color: @ice;
+			padding: 0;
+		}
+	}
+
+	form {
+		margin: 25px 0 0;
+		width: 100%;
+	}
+
+	h2 {
+		font-size: @large;
+		text-transform: none;
+		margin-bottom: 30px;
+	}
+
+	.btn {
+		display: block;
+		width: 100%;
+	}
+
+	a {
+		padding-top: 20px;
+		display: inline-block;
+		color: @charcoal;
+	}
+
+	.accept {
+		width: 100%;
+		display: block;
+		margin-bottom: 15px;
+		
+		a {
+			float: none;
+			padding: 0;
+		}
+	}
+}
+
+@import url(../tablet/auth.less);

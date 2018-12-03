@@ -1,0 +1,44 @@
+Antes que nada hay que instalar grunt en la carpeta del proyecto ( y si no lo tienen, globalmente)
+
+1) CREO que es (desde la consola):
+para global: npm install -g grunt-cli
+para local: npm install grunt --save-dev
+
+2) No subí la carpeta de node_modules, por ende hagan un 
+ npm install
+Asi instala todas las dependencias necesarias. Si no funciona me avisan y lo vemos.
+
+3)
+En este proyecto hay una carpeta de desarrollo (dev) y una de produccion (dist)
+TODO lo que hagamos en el html / css se va a tocar en "dev"
+
+En la consola accedemos a la carpeta donde tengamos el proyecto guardado, y con grunt watch, se van a compilar todos los cambios que hagamos en los archivos y se van a guardar en "dist".
+
+Estructura de carpetas:
+
+dev
+   |_ css
+	|_ desktop --> Estilos especificos de escritorio
+	|_ mobile --> Estilos mobile-first (va sin media queries, empezamos por mobile y lo vamos subiendo a desktop)
+	|_ tablet --> Estilos especificos para tablet
+	|_ general.less --> Acá van estilos generales (Colores, tipografias, cosas que se repiten mucho, etc)
+	|_ grid-base.less --> Acá armamos la grilla de productos / huertas (ver clases ya agregadas)
+	|_ main.less --> Acá incluir todos los archivos css (Ver el ejemplo que ya esta incluido)
+   |_ images
+   |_ js  --> Todos los archivos de js que creamos acá despues se compilan en dist/js/main.js (ojo con el orden de las cosas nomas)
+   |_ sprites --> por ahora aca no hacemos nada
+   |_ vendor 
+ 	|_ css --> Acá van los css de los plugins (despues se compila en dist/css/vendor.css)
+	|_ js --> Acá van los js de los plugins (despues se compila en dist/js/vendor.js) 
+
+
+Los html los guardé en la raiz del proyecto pero podemos reordenarlos luego.
+
+Lo importante en el html es agregar:
+
+	<link rel="stylesheet" type="text/css" href="dist/css/vendor.css"> (Ya incluye bootsrap 4)
+	<link rel="stylesheet" type="text/css" href="dist/css/main.css"> (Compila todos los css de dev/css)
+
+
+	<script type="text/javascript" src="dist/js/vendor.js"></script> (ya incluye jquery y bootstrap 4)
+	<script type="text/javascript" src="dist/js/main.js"></script> (por ahora esta vacio)

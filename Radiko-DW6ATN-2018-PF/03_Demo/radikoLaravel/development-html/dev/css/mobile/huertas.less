@@ -1,0 +1,127 @@
+.no-results {
+	width: 100%;
+
+	p {
+		font-size: @large;
+		color: @ice;
+		background: @pepper;
+		padding: 15px;
+		margin: 0;
+		width: 100%;
+	}
+
+	h2 {
+		font-size: @regular;
+		color: @ice;
+		margin-bottom: 15px;
+	}
+
+	.search-form {
+		margin-top: 20px;
+		padding: 20px;
+		background: @tomato;
+
+		input {
+			padding: 0 15px;
+		    line-height: 60px;
+		    height: 60px;
+		}
+
+		.btn-search {
+		    font-size: @large;
+		    color: @charcoal-lg;
+		    position: absolute;
+		    right: 15px;
+		    top: 15px;
+		    background: transparent;
+		    border: 0;
+		    outline: none;
+		    box-shadow: none;
+		    cursor: pointer;
+		}
+
+		.form-row {
+			margin: 0;
+		}
+	}
+}
+
+.top {
+	padding-bottom: 15px;
+	border-bottom: 1px solid @grey-md;
+	margin-bottom: 45px;
+
+	h2 {
+		font-size: @large + 2;
+		margin: 25px 0 0;
+	}
+}
+
+.huerta-productos {
+	.card {
+		width: 100%;
+	}
+}
+
+.huerta-detalle {
+	.sidebar-filtros,
+	.tabs-outline {
+		margin-top: 30px;
+	}
+}
+
+.header-huerta {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: -40px -15px 30px;
+	padding: 65px 0;
+	text-align: center;
+	color: @ice;
+	
+	.diagonal {
+		width: 100%;
+	}
+
+	h2 {
+		text-shadow: 4px 4px 0 black;
+	    font-size: 3rem;
+	    line-height: 100%;
+	    font-weight: 700;
+	}
+}
+
+.huerta-informacion {
+	#map {
+		width: 100%;
+		margin-top: 25px;
+		margin-bottom: 30px;
+		height: 50vh;
+	}
+
+	h2 {
+		margin: 0 0 15px 0;
+		font-size: @regular;
+	}
+
+	.horarios-envios {
+		padding: 25px 0 15px;
+		border-bottom: 1px solid @grey-md;
+
+		li > span {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.datos {
+		width: 100%;
+		padding: 15px;
+		background: @pepper;
+		color: @ice;
+		margin: 0;
+	}
+}
+
+
+@import url(../tablet/huertas.less);

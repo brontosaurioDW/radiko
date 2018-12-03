@@ -1,0 +1,84 @@
+.modal-backdrop.show {
+    opacity: 0.8;
+}
+
+.modal {
+	.closes {
+		position: absolute;
+	    right: 15px;
+	    top: 15px;
+	    border: 0;
+	    padding: 0;
+	    background: transparent;
+	    line-height: normal;
+	    font-size: @regular;
+	    cursor: pointer;
+	    z-index: 10;
+	}
+
+	.modal-body {
+		padding-top: 3rem;
+	}
+
+	.modal-content {
+		border: 0;
+		border-bottom: 5px solid @charcoal;
+		border-radius: 0;
+		box-shadow: none;
+
+		.product-img {
+			margin-bottom: 1.5rem;
+		}
+
+		.card {
+			position: static;
+		}
+
+		h2 {
+			font-weight: bold;
+		}
+		
+		.precio + p {
+			line-height: 165%;
+			margin: 15px 0;
+		    padding: 15px 0;
+		    border-top: 1px solid @grey-md;
+		    border-bottom: 1px solid @grey-md;
+		}
+
+		label {
+			min-height: unset;
+			margin: 0;
+			font-size: @regular - 1;
+			font-weight: 600;
+		}
+
+		.select {
+			width: 75%;
+		}
+
+		.btn {
+			position: static;
+			bottom: 0;
+		    left: 15px;
+		    right: unset;
+		    top: unset;
+		}
+	}
+}
+
+.product-img {
+	position: relative;
+
+	span {
+		position: absolute;
+	    bottom: 20px;
+	    left: 20px;
+	    color: white;
+	    font-weight: bold;
+	    font-size: @regular;
+	    text-shadow: 1px 1px 0 @charcoal;
+	}
+}
+
+@import url(../tablet/modal.less);

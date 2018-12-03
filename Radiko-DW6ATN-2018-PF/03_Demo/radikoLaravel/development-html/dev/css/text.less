@@ -1,0 +1,100 @@
+// Textos: Titulares, parrafos y variantes
+
+h2,
+h3,
+h4 {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: @small * 2;
+}
+
+h3 {
+	font-size: @x-small * 2;
+}
+
+h4 {
+	font-size: @x-regular + 2;
+}
+
+
+.bold {
+	font-weight: 700;
+}
+
+.semi-bold {
+	font-weight: 600;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.light {
+	color: @charcoal-lg;
+}
+
+.sub-title {
+    margin: 25px 0;
+    padding: 25px 0;
+    border-top: 1px solid @grey-md;
+    border-bottom: 1px solid @grey-md;
+}
+
+.privacy {
+	padding-bottom: 10%;
+}
+
+// Listas
+
+	.no-bullets {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.simple-list {
+		list-style: none;
+		padding: 0;
+		margin: 10px 0 0 0;
+
+		li {
+			margin: 10px 0;
+			font-size: @small;
+		}
+	}
+
+	.big-list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		h3,
+		h4 {
+			text-transform: none;
+		}
+
+		h3 {
+			font-size: 1.2rem;
+		    margin-bottom: 20px;
+		}
+
+		h4 {
+			font-size: 1rem;
+			margin-bottom: 15px;
+		}
+
+		& > li {
+			margin-bottom: 25px;
+		}
+
+		ul {
+			list-style: disc;
+
+			li {
+				margin: 10px 0;
+			}
+		}
+	}

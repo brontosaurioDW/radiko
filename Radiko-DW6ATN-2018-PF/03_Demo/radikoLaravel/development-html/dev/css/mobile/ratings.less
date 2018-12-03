@@ -1,0 +1,155 @@
+.ratings-cat {
+	list-style: none;
+	margin: 0 0 30px;
+	padding: 0;
+
+    li {
+        padding: 10px 0;
+        font-size: @small;
+        color: @charcoal-lg;
+        overflow: hidden;
+    }
+
+    .name {
+    	width: auto;
+    	position: relative;
+    	text-align: left;
+    	height: 16px;
+    	padding: 0 0 10px 0;
+    	min-width: 110px;
+    }
+
+    .middle {
+    	float: left;
+    	width: 100%;
+    	position: relative;
+    	border-bottom: 1px solid @grey-lg;
+    	height: 15px;
+
+        span {
+        	-webkit-transition: all 0.8s ease-in-out;
+        	-moz-transition: all 0.8s ease-in-out;
+        	-o-transition: all 0.8s ease-in-out;
+        	transition: all 0.8s ease-in-out;
+        	position: absolute;
+        	height: 5px;
+        	width: 0%;
+        	background: @grape;
+        	bottom: 0;
+        }
+    }
+
+    .amount {
+        float: left;
+        width: 11%;
+        position: relative;
+        text-align: right;
+        height: 15px;
+    }
+}
+
+.list-opiniones,
+.list-boxed {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		margin: 15px 0;
+
+		& > span:first-child {
+			width: 185px;
+		}
+	}
+
+	.media-img {
+		width: 55px;
+		height: 55px;
+		overflow: hidden;
+		margin-right: 15px;
+	}
+	
+	.opinion-wrapper,
+	.list-wrapper {
+		width: 100%;
+	    margin-bottom: 20px;
+	    border-bottom: 1px solid @grey-md;
+	    padding-bottom: 20px;
+
+		h3 {
+			font-size: @small;
+			margin: 5px 0 15px 0;
+		}
+
+		p {
+			margin: 0;
+			font-size: @x-small;
+			line-height: 180%;
+		}
+	}
+
+	.stars {
+	    color: @charcoal-lg;
+	    text-align: center;
+	    font-size: @x-small;
+	    font-weight: bold;
+	    display: inline-block;
+	    float: right;
+
+	    i {
+	    	vertical-align: middle;
+	    	margin: 0 0 0 5px;
+	    }
+	}
+
+	& + .form {
+		margin-bottom: 25px;
+		margin-top: 40px;
+	}
+}
+
+.star-rating {
+	margin-bottom: 20px;
+	font-size: 0;
+
+	label {
+		font-weight: normal;
+		margin-right: 5px;
+	}
+
+	.star-rating-wrap {
+		display: inline-block;
+		font-size: 1rem;
+
+		&::after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+
+	.star-rating-wrap
+	.star-font {
+		float: right;
+		padding-left: 2px;
+		cursor: pointer;
+		color: #FFB300;
+	}
+
+	.star-font:last-child{
+		padding-left: 0;
+	}
+
+	.star-input {
+		display: none;
+	}
+
+	.star-font:hover:before,
+	.star-font:hover ~ .star-font:before,
+	.star-input:checked ~ .star-font:before {
+		font-weight: 700;
+	}
+}
+
+
+@import url(../tablet/ratings.less);

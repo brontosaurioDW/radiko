@@ -1,0 +1,63 @@
+.why-radiko {
+	background-color: @grape;
+	height: 40vh;
+	min-height: 400px;
+	background-attachment: fixed;
+	margin-bottom: 1rem;
+
+	h2 {
+		font-size: @x-regular * 2.1;
+		color: @ice;
+		text-shadow: 3px 3px 0 @grape-dk;
+		text-transform: uppercase;
+		margin: 0 auto 2rem;
+	}
+}
+
+.download-app {
+	background-color: @pepper;
+	color: @ice;
+	height: 425px;
+	background-attachment: fixed;
+
+	.container,
+	.row {
+		height: 100%;
+	}
+
+	h2 {
+		font-size: @x-regular * 2.1;
+		font-weight: bold;
+		text-shadow: 3px 3px 0 @pepper-dk;
+		letter-spacing: 2px;
+	}
+
+	p {
+		font-size: @large + 3;
+		margin: 1.5rem auto 2rem;
+		max-width: 625px;
+		font-weight: 500;
+	}
+
+	.download-mockup {
+		position: absolute;
+		bottom: 0;
+	}
+
+	&.purple {
+		background-color: @grape;
+
+		h2 {
+		    text-shadow: 3px 3px 0 @grape-dk;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.download-app {
+		height: unset;
+		padding: 3rem 0;
+	}
+}
+
+@import url(../tablet/home.less);
