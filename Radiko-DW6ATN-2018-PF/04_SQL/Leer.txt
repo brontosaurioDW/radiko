@@ -1,0 +1,4 @@
+El sql no es utilizable para la aplicación ya que está programada en laravel y la base con los datos se levanta desde el mismo framework.
+El sql sirve en este caso a modo de ejemplo.
+
+Radiko
