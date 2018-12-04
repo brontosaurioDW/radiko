@@ -1,0 +1,42 @@
+footer {
+	background: @charcoal;
+	color: @ice;
+	padding: 4rem 0;
+	text-align: center;
+	width: 100%;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			margin: 15px 0;
+		}
+
+		li:first-child {
+			margin-top: 0;
+		}
+
+		a {
+			color: @ice;
+			transition: .3s;	
+
+			&:hover {
+				opacity: .8;
+				color: @ice;
+			}
+		}
+	}
+
+	.download-btn  {
+		li {
+			margin-top: 0;
+			margin-bottom: 0;
+			width: 40%;
+			margin: 0 1%;
+		}
+	}
+}
+
+@import url(../tablet/footer.less);

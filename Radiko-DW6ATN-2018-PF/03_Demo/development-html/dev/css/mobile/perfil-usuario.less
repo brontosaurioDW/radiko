@@ -1,0 +1,64 @@
+.user-info {
+	margin-bottom: 20px;
+
+	ul {
+		padding: 10px 0;
+	    border-top: 1px solid #ddd;
+	    border-bottom: 1px solid #ddd;
+	    margin-bottom: 10px;
+	}
+
+	.btn {
+		width: 100%;
+	}
+}
+
+.orders {
+	
+	li {
+		position: relative;
+		
+		a {
+			position: absolute;
+			bottom: 15px;
+			right: 15px;
+		}
+	}	
+}
+
+.profile {
+	h2,
+	h3 {
+		font-size: @small * 2;
+		margin-bottom: 30px;
+	}
+}
+
+.file-btn {
+	i {
+		margin-right: 10px;
+	}
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+
+	& + label {
+	    font-size: @regular;
+        display: block;
+        cursor: pointer;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+	}
+
+	& + label * {
+		pointer-events: none;
+	}
+}
